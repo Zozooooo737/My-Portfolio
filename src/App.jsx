@@ -1,9 +1,9 @@
-import React from "react";
+import Rooter from "./routers/Router.jsx";
 
 export default function App() {
   return (
     <div>
-      <h1>Enzo BOTTURA</h1>
+      <Rooter />
     </div>
   );
 }
