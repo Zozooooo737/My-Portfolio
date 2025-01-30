@@ -1,5 +1,6 @@
 import React from "react";
+import UnderConstruction from "../components/elements/UnderConstruction";
 
 export default function Profile() {
-  return <h1>Profile Page</h1>;
+  return <UnderConstruction />;
 }

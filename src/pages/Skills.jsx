@@ -1,5 +1,6 @@
 import React from "react";
+import UnderConstruction from "../components/elements/UnderConstruction";
 
 export default function Skills() {
-  return <h1>Skills Page</h1>;
+  return <UnderConstruction />;
 }

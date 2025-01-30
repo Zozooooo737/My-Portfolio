@@ -1,2 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Paytone+One&display=swap");
 @import "tailwindcss";
-@config "../../tailwind.config.js";
+
+@theme {
+  --color-primary: #7783ee;
+  --color-secondary: #473493;
+  --color-accent: #fff7c2;
+  --color-background: #0a0a0a;
+  --color-text: #f2eaea;
+
+  --font-title: "Paytone One", sans-serif;
+
+  --shadow-box: 4px 4px 15px -5px #fff7c2;
+
+  --shadowTitlePrimary: 1px 1px 2px #7783ee;
+}
+
+.shadowTitlePrimary {
+  text-shadow: 4px 4px 5px #7783ee;
+}
+
+.bg-pattern {
+  background-image: url("@/media/images/Background_Pattern.jpg");
+  background-repeat: repeat;
+}

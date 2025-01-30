@@ -1,9 +1,10 @@
-import Rooter from "./routers/Router.jsx";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "@/routers/AppRouter";
 
 export default function App() {
   return (
-    <div>
-      <Rooter />
-    </div>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   );
 }

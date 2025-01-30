@@ -1,5 +1,6 @@
 import React from "react";
+import UnderConstruction from "../components/elements/UnderConstruction";
 
 export default function Projects() {
-  return <h1>Projects Page</h1>;
+  return <UnderConstruction />;
 }

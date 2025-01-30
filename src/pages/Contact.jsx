@@ -1,5 +1,6 @@
 import React from "react";
+import UnderConstruction from "../components/elements/UnderConstruction";
 
 export default function Contact() {
-  return <h1>Contact Page</h1>;
+  return <UnderConstruction />;
 }
