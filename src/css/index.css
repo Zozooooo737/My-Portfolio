@@ -22,4 +22,5 @@
 .bg-pattern {
   background-image: url("@/media/images/Background_Pattern.jpg");
   background-repeat: repeat;
+  background-position: center top;
 }

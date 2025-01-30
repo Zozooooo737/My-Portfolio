@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/projects");
+  };
+
   return (
     <div className="flex h-full w-full flex-col items-center justify-center space-y-4 text-center">
       <div className="font-title shadowTitlePrimary text-8xl uppercase">
@@ -14,7 +21,10 @@ export default function Home() {
         <br />
         Curieux de voir ce que ça donne ? Plongez dans mes réalisations !
       </p>
-      <button className="text-background bg-primary hover:bg-accent hover:shadow-box mt-7 cursor-pointer rounded-md px-6 py-4 text-2xl font-bold uppercase transition">
+      <button
+        onClick={handleClick}
+        className="text-background bg-primary hover:bg-accent hover:shadow-box mt-7 cursor-pointer rounded-md px-6 py-4 text-2xl font-bold uppercase transition"
+      >
         Découvrir mes projets
       </button>
     </div>
