@@ -1,19 +1,21 @@
 import { Outlet } from "react-router-dom";
-import Container from "@/components/elements/Container";
-import NavBar from "@/components/base/NavBar";
-import Footer from "@/components/base/Footer";
+import Container from "@/components/ui/Container";
+import NavBar from "@/components/layout/NavBar";
+import Footer from "@/components/layout/Footer";
 
 export default function MainLayout() {
   return (
-    <div className="text-text flex h-screen w-full flex-col">
+    <div className="text-text flex min-h-screen w-full flex-col">
       {/* Barre de navigation */}
       <NavBar />
+
       {/* Contenu dynamique */}
-      <div className="bg-pattern w-full flex-1 overflow-y-auto">
-        <Container>
+      <div className="bg-pattern flex flex-1 flex-col pt-[96px]">
+        <Container className="flex flex-1 flex-col">
           <Outlet />
         </Container>
       </div>
+
       {/* Pied de page */}
       <Footer />
     </div>

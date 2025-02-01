@@ -20,7 +20,9 @@
 }
 
 .bg-pattern {
-  background-image: url("@/media/images/Background_Pattern.jpg");
+  background-image: url("@/assets/images/background-pattern.jpg");
   background-repeat: repeat;
   background-position: center top;
+  background-attachment: fixed;
+  background-size: auto;
 }
