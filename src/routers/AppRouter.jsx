@@ -5,6 +5,7 @@ import Profile from "@/pages/Profile";
 import Skills from "@/pages/Skills";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
+import Scorpix from "@/pages/projects/Scorpix";
 
 export default function AppRouter() {
   return (
@@ -14,6 +15,7 @@ export default function AppRouter() {
         <Route path="profile" element={<Profile />} />
         <Route path="skills" element={<Skills />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="projects/scorpix" element={<Scorpix />} />
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>

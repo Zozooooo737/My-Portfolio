@@ -47,8 +47,8 @@ export default function NavBar() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
         {/* Logo et nom */}
         <div className="flex items-center space-x-4">
-          <img src={Logo} alt="Enzo Bottura Portfolio" className="w-20" />
-          <span className="text-3xl font-semibold">ENZO BOTTURA</span>
+          <img src={Logo} alt="Enzo Bottura Portfolio" className="w-15" />
+          <span className="text-2xl font-semibold">ENZO BOTTURA</span>
         </div>
 
         {/* Menu de navigation avec des boutons vers différentes sections */}

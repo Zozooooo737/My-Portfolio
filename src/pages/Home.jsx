@@ -11,20 +11,19 @@ export default function Home() {
   };
 
   return (
-    <div className="flex w-full flex-grow flex-col items-center justify-center space-y-4 text-center">
+    <div className="my-auto flex h-full w-full flex-grow flex-col items-center justify-center space-y-4 text-center">
       {/* Titre de bienvenue */}
       <div className="font-title shadowTitlePrimary text-8xl uppercase">
         Bienvenue
       </div>
 
       {/* Texte de présentation */}
-      <p className="my-3 text-2xl">
-        Passionné d'ingénierie, j'aime explorer de nouveaux horizons à travers
-        mes projets. Entre mécanique, électronique, mécatronique et
-        programmation, chaque défi est une occasion d'innover, de résoudre des
-        problèmes complexes et d'affiner mon expertise. <br />
+      <p className="my-3 w-3xl text-3xl">
+        Je m'appelle Enzo BOTTURA et je suis étudiant en deuxième année à
+        l'ESILV. <br />
         <br />
-        Curieux de voir ce que ça donne ? Plongez dans mes réalisations !
+        Passionné par les Projets innovants, je m'efforce chaque jour de
+        développer et d'enrichir mes Compétences.
       </p>
 
       {/* Bouton qui redirige vers la page des projets */}

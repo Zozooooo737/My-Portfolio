@@ -26,3 +26,22 @@
   background-attachment: fixed;
   background-size: auto;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-secondary) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-secondary) !important;
+  opacity: 0.8 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-accent) !important;
+  opacity: 1 !important;
+  width: 14px !important;
+  height: 14px !important;
+}
