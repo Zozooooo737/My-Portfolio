@@ -14,14 +14,12 @@ import LogoUnitTests from "@/assets/icons/skills/unit-tests-logo.png";
 import LogoDomotic from "@/assets/icons/skills/domotics-logo.png";
 import LogoTeam from "@/assets/icons/skills/team-logo.png";
 
-export default function Tag({ id, number }) {
+export default function Tag({ id, number, isTextMode = true }) {
   const [isHovered, setIsHovered] = useState(false);
 
-  {
-    /* Définition des propriétés en fonction de l'ID */
-  }
+  // Définition des propriétés en fonction de l'ID
   const tagsData = {
-    0: { name: `+${number}`, color: "#fff7c2", logo: LogoOthers }, // Correction ici
+    0: { name: `+${number}`, color: "#fff7c2", logo: LogoOthers },
     1: { name: "Modélisation 3D", color: "#C6FFFA", logo: Logo3DModeling },
     2: { name: "Mécanique", color: "#FFE9C6", logo: LogoMechanics },
     3: { name: "Usinage", color: "#FFC6C6", logo: LogoMachining },
@@ -41,42 +39,61 @@ export default function Tag({ id, number }) {
   return (
     <div
       className={clsx(
-        "relative flex items-center justify-center rounded-full px-3 py-1 transition-all duration-300 ease-in-out",
-        "h-12 min-w-[48px] overflow-hidden",
-        isHovered ? "w-fit min-w-fit px-4" : "w-12",
+        "relative flex items-center justify-center rounded-full transition-all duration-300 ease-in-out",
+        isTextMode
+          ? "w-fit px-3 py-2" // Padding pour le mode texte
+          : "h-12 min-w-[48px] overflow-hidden", // Taille fixe pour le mode étiquette
+        !isTextMode && isHovered ? "w-fit min-w-fit px-4" : "w-12",
       )}
       style={{ backgroundColor: tag.color }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => !isTextMode && setIsHovered(true)}
+      onMouseLeave={() => !isTextMode && setIsHovered(false)}
     >
-      {/* Image */}
-      <img
-        src={tag.logo}
-        alt={tag.name}
-        className={clsx(
-          "h-8 w-8 object-contain transition-all duration-400 ease-in-out",
-          "absolute",
-          isHovered
-            ? "translate-x-[-70px] scale-90 opacity-0"
-            : "translate-x-0 scale-100 opacity-100",
-        )}
-        style={{
-          left: "50%",
-          transform: "translateX(-50%)",
-        }}
-      />
+      {/* Mode texte : affichage simple du texte */}
+      {isTextMode && (
+        <span
+          className={clsx(
+            "text-background text-md font-bold whitespace-nowrap",
+            "transition-none", // Désactive les transitions
+          )}
+        >
+          {tag.name}
+        </span>
+      )}
 
-      {/* Texte */}
-      <span
-        className={clsx(
-          "text-background text-md font-bold whitespace-nowrap transition-all duration-500 ease-in-out",
-          isHovered
-            ? "translate-x-0 scale-100 opacity-100"
-            : "translate-x-4 scale-90 opacity-0",
-        )}
-      >
-        {tag.name}
-      </span>
+      {/* Mode étiquette : logo + animation au survol */}
+      {!isTextMode && (
+        <>
+          {/* Logo */}
+          <img
+            src={tag.logo}
+            alt={tag.name}
+            className={clsx(
+              "h-8 w-8 object-contain transition-all duration-400 ease-in-out",
+              "absolute",
+              isHovered
+                ? "translate-x-[-70px] scale-90 opacity-0"
+                : "translate-x-0 scale-100 opacity-100",
+            )}
+            style={{
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
+          />
+
+          {/* Texte */}
+          <span
+            className={clsx(
+              "text-background text-md font-bold whitespace-nowrap transition-all duration-500 ease-in-out",
+              isHovered
+                ? "translate-x-0 scale-100 opacity-100"
+                : "translate-x-4 scale-90 opacity-0",
+            )}
+          >
+            {tag.name}
+          </span>
+        </>
+      )}
     </div>
   );
 }

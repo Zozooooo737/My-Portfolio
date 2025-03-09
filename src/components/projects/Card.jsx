@@ -34,7 +34,7 @@ export default function Card({
               className="z-20 translate-x-full justify-end opacity-0 grayscale-100 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 group-hover:grayscale-0"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <Tag id={id} />
+              <Tag id={id} isTextMode={false} />
             </div>
           ))}
           {tags.length > 5 && (

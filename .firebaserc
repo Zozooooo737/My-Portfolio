@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "my-portfolio-eb"
-  }
+    "default": "my-portfolio-eb",
+    "my-portfolio": "my-portfolio-eb"
+  },
+  "targets": {},
+  "etags": {}
 }

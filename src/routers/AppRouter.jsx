@@ -5,7 +5,9 @@ import Profile from "@/pages/Profile";
 import Skills from "@/pages/Skills";
 import Projects from "@/pages/Projects";
 import Contact from "@/pages/Contact";
-import Scorpix from "@/pages/projects/Scorpix";
+import Scorpix from "@/pages/projects/scorpix/Scorpix";
+import Cloclo from "@/pages/projects/cloclo/Cloclo";
+import BoogleZoa from "@/pages/projects/boogleZoa/BoogleZoa";
 
 export default function AppRouter() {
   return (
@@ -16,6 +18,8 @@ export default function AppRouter() {
         <Route path="skills" element={<Skills />} />
         <Route path="projects" element={<Projects />} />
         <Route path="projects/scorpix" element={<Scorpix />} />
+        <Route path="projects/cloclo" element={<Cloclo />} />
+        <Route path="projects/boogle-zoa" element={<BoogleZoa />} />
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>
