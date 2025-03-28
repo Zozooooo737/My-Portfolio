@@ -32,7 +32,7 @@ const DiscoverCards = () => {
   ];
 
   return (
-    <section className="border-secondary bg-background mb-20 rounded-xl border-2 p-8 text-center shadow-[0_0_20px_5px_rgba(119,131,238,0.3)]">
+    <section className="border-primary bg-background mb-20 rounded-xl border-2 p-8 text-center shadow-[0_0_20px_5px_rgba(119,131,238,0.3)]">
       <h2 className="text-text mb-6 text-3xl font-bold">
         Vous voulez en savoir plus sur moi ?<br />
         <span className="text-primary">Explorez mon univers</span>
