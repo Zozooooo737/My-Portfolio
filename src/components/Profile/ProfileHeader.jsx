@@ -60,7 +60,7 @@ const ProfileHeader = () => {
           <img
             src={photos.profil}
             alt="Enzo Bottura"
-            className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-130"
           />
         </div>
       </div>
