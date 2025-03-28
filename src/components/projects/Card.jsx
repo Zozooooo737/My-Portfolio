@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function Card({
   name,
+  link,
   image,
   imageAlt,
   description,
   tags = [],
 }) {
   return (
-    <Link to={`/projects/${name}`}>
+    <Link to={`/projects/${link}`}>
       <div className="bg-primary group border-primary hover:border-accent relative h-88 w-130 cursor-pointer content-end items-end overflow-hidden rounded-2xl border-4 p-6 transition-transform duration-200 hover:scale-110">
         {/* Image de fond */}
         <div className="absolute top-0 left-0 z-0 h-full w-full overflow-hidden rounded-2xl">
