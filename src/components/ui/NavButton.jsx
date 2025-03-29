@@ -8,10 +8,21 @@ export default function NavButton({ to, children }) {
       to={to}
       className={({ isActive }) =>
         clsx(
-          "text-text rounded-sm px-4 py-2 text-xl font-semibold underline decoration-4 underline-offset-8 transition-all duration-300",
+          // Styles de base
+          "text-text relative px-4 py-3 text-xl font-semibold transition-all duration-300",
+
+          // Pseudo-élément pour le soulignement
+          "after:absolute after:bottom-1 after:left-1/2 after:h-1 after:w-0", // Centré initialement
+          "after:bg-primary after:origin-center after:rounded-full",
+          "after:transition-all after:duration-300 after:ease-out",
+
+          // Effet hover - s'étend des deux côtés
+          "hover:after:bg-accent hover:after:left-4 hover:after:w-[calc(100%-2rem)]",
+
+          // État actif
           isActive
-            ? "decoration-primary"
-            : "hover:decoration-accent decoration-background",
+            ? "after:bg-primary hover:after:bg-primary font-medium after:left-4 after:w-[calc(100%-2rem)]"
+            : "hover:text-text/90",
         )
       }
     >

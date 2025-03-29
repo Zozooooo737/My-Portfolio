@@ -1,6 +1,13 @@
 import React from "react";
-import UnderConstruction from "@/components/ui/UnderConstruction";
+import SkillsList from "@/components/skills/SkillsList";
+import { skillsData } from "@/data/skillsData";
 
-export default function Skills() {
-  return <UnderConstruction />;
-}
+const Skills = () => {
+  return (
+    <div className="w-full">
+      <SkillsList skills={skillsData} />
+    </div>
+  );
+};
+
+export default Skills;

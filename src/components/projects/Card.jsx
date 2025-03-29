@@ -7,7 +7,7 @@ export default function Card({
   image,
   imageAlt,
   description,
-  tags = [],
+  skills = [],
 }) {
   return (
     <Link to={`/projects/${link}`}>
@@ -29,21 +29,31 @@ export default function Card({
 
         {/* Tags en haut à droite */}
         <div className="absolute top-0 right-0 mt-2 mr-2 flex flex-col items-end gap-2">
-          {tags.slice(0, 5).map((id, index) => (
-            <div
-              key={id}
-              className="z-20 translate-x-full justify-end opacity-0 grayscale-100 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 group-hover:grayscale-0"
-              style={{ transitionDelay: `${index * 100}ms` }}
-            >
-              <Tag id={id} isTextMode={false} />
-            </div>
-          ))}
-          {tags.length > 5 && (
+          {skills.slice(0, 5).map(
+            (
+              skill,
+              index, // Ajout de l'index ici
+            ) => (
+              <div
+                key={skill.id}
+                className="z-20 translate-x-full justify-end opacity-0 grayscale-100 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 group-hover:grayscale-0"
+                style={{ transitionDelay: `${index * 100}ms` }} // Maintenant index est défini
+              >
+                <Tag
+                  name={skill.name}
+                  logo={skill.logo}
+                  color={skill.color}
+                  isTextMode={false}
+                />
+              </div>
+            ),
+          )}
+          {skills.length > 5 && (
             <div
               className="z-20 translate-x-full justify-end opacity-0 grayscale-100 transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 group-hover:grayscale-0"
               style={{ transitionDelay: "500ms" }}
             >
-              <Tag id={0} number={tags.length - 5} />
+              <Tag name={`+${skills.length - 5}`} isTextMode={true} />
             </div>
           )}
         </div>

@@ -31,7 +31,7 @@ export default function Home() {
         onClick={handleClick}
         className="text-background bg-primary hover:bg-accent hover:shadow-box mt-7 cursor-pointer rounded-md px-6 py-4 text-2xl font-bold uppercase transition"
       >
-        Découvrir mes projets
+        Découvrir mon profil
       </button>
     </div>
   );
