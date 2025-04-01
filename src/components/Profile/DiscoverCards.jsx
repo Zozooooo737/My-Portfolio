@@ -33,7 +33,7 @@ const DiscoverCards = () => {
 
   return (
     <section className="border-primary bg-background mb-20 rounded-xl border-2 p-8 text-center shadow-[0_0_20px_5px_rgba(119,131,238,0.3)]">
-      <h2 className="text-text mb-6 text-3xl font-bold">
+      <h2 className="text-text mb-6 text-2xl font-bold sm:text-3xl">
         Vous voulez en savoir plus sur moi ?<br />
         <span className="text-primary">Explorez mon univers</span>
       </h2>
@@ -43,7 +43,7 @@ const DiscoverCards = () => {
           <div
             key={index}
             onClick={() => navigate(card.path)}
-            className={`${card.bgColor} group relative flex h-80 cursor-pointer flex-col items-center justify-center overflow-hidden rounded-xl p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg`}
+            className={`${card.bgColor} group relative flex h-50 cursor-pointer flex-col items-center justify-center overflow-hidden rounded-xl p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg`}
           >
             {/* Icône */}
             <div
@@ -54,14 +54,14 @@ const DiscoverCards = () => {
 
             {/* Titre */}
             <h3
-              className={`${card.textColor} mb-2 text-2xl font-bold transition-colors duration-300`}
+              className={`${card.textColor} mb-2 text-xl font-bold transition-colors duration-300 sm:text-2xl`}
             >
               {card.title}
             </h3>
 
             {/* Description */}
             <p
-              className={`${card.textColor} group-hover:opacity- text-sm opacity-80 transition-opacity duration-300`}
+              className={`${card.textColor} text-sm opacity-80 transition-opacity duration-300 group-hover:opacity-100`}
             >
               {card.description}
             </p>

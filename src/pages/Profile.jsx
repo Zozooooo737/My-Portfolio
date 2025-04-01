@@ -1,5 +1,4 @@
 import React from "react";
-
 import ProfileHeader from "@/components/profile/ProfileHeader";
 import Timeline from "@/components/profile/Timeline";
 import DiscoverCards from "@/components/profile/DiscoverCards";
@@ -7,7 +6,7 @@ import CVViewer from "@/components/profile/CVViewer";
 
 const Profile = () => {
   return (
-    <div className="space-y- mt-10 w-full items-center justify-center p-5">
+    <div className="mx-auto w-full max-w-6xl space-y-3 px-4 py-8 sm:space-y-4 sm:px-6 sm:py-10 md:space-y-0 lg:px-8 lg:py-12">
       <ProfileHeader />
       <Timeline />
       <DiscoverCards />

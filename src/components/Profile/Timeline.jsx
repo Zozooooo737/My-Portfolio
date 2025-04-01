@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
 
 const Timeline = () => {
-  const timelineRef = useRef(null);
-
   // Données de la timeline
   const timelineData = [
     {
@@ -33,14 +31,14 @@ const Timeline = () => {
       title: "Vie Associative : Secrétaire 3V",
       date: "2023 - Avril",
       description:
-        "Début du mandat en tant que secrétaire au bureau de Veni Vidi deVinci (BDE de l'ESILV).",
+        "Mandat en tant que secrétaire au bureau de Veni Vidi deVinci (BDE de l'ESILV).",
     },
     {
       id: 5,
       title: "Vie Associative : Intégration Etudiant ESILV",
       date: "Septembre - 2023",
       description:
-        "Intégration des nouveaux étudiants ingénieurs via une journée de bienvenue, une intervention en amphithéâtre, un parainage, l'écriture d'un guide de survie et un afterwork sur Paris.",
+        "Intégration des nouveaux étudiants ingénieurs via une journée de bienvenue, une intervention en amphithéâtre, un parrainage, l'écriture d'un guide de survie et un afterwork sur Paris.",
     },
     {
       id: 6,
@@ -54,7 +52,7 @@ const Timeline = () => {
       title: "Projet : Scorpix - PIX 1",
       date: "Juin - 2024",
       description:
-        "Réalisation d'un hexapode mécanique modulable se déplacant de façon rectiligne.",
+        "Réalisation d'un hexapode mécanique modulable se déplaçant de façon rectiligne.",
       link: "/projects/scorpix",
     },
     {
@@ -62,7 +60,7 @@ const Timeline = () => {
       title: "Soft Skills : Design Thinking et Créativité",
       date: "2024 - Septembre",
       description:
-        "Formation sur la méthode d'innovation, créativité et résolution de problème du Design Thinking. Réalisation d'un projet en faveur de l'alimentation pour tous et le developpement durable.",
+        "Formation sur la méthode d'innovation, créativité et résolution de problème du Design Thinking. Réalisation d'un projet en faveur de l'alimentation pour tous et le Dévéloppement durable.",
     },
     {
       id: 9,
@@ -76,7 +74,7 @@ const Timeline = () => {
       title: "Projet : Boogle Zoa",
       date: "2024 - Décembre",
       description:
-        "Developpement du jeu Boogle en c# sur console, programmation orienté objet et tests unitaires.",
+        "Dévéloppement du jeu Boogle en C# sur console, programmation orienté objet et tests unitaires.",
       link: "/projects/boogle-zoa",
     },
     {
@@ -84,50 +82,29 @@ const Timeline = () => {
       title: "Hackaton : Hyperconnexion et Hypertransparence des données",
       date: "Février - 2025",
       description:
-        "Developpement en équipe d'une solution pour la protection de notre vie privée et de nos données personnelles.",
+        "Dévéloppement en équipe d'une solution pour la protection de notre vie privée et de nos données personnelles.",
     },
   ];
 
-  useEffect(() => {
-    const timelineItems =
-      timelineRef.current.querySelectorAll(".timeline-item");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in-up");
-          }
-        });
-      },
-      { threshold: 0.5 },
-    );
-
-    timelineItems.forEach((item) => observer.observe(item));
-    return () => timelineItems.forEach((item) => observer.unobserve(item));
-  }, []);
-
   return (
-    <div
-      className="relative mx-auto w-full max-w-4xl space-y-6 py-12"
-      ref={timelineRef}
-    >
+    <div className="relative mx-auto w-full max-w-4xl space-y-6 py-12">
       {/* Ligne Centrale */}
-      <div className="from-primary to-secondary absolute top-0 left-1/2 h-full w-[3px] -translate-x-1/2 transform bg-gradient-to-b shadow-[0_0_10px_var(--color-primary)]"></div>
+      <div className="from-primary to-secondary absolute top-0 left-1/2 hidden h-full w-[3px] -translate-x-1/2 transform bg-gradient-to-b shadow-[0_0_10px_var(--color-primary)] md:block"></div>
 
       {/* Éléments de la Timeline */}
       {timelineData.map((event, index) => (
         <div
           key={index}
-          className={`group relative flex h-full w-full items-center ${
-            index % 2 === 0 ? "justify-end" : "justify-start"
+          className={`group relative flex h-full w-full flex-col items-center md:flex-row ${
+            index % 2 === 0 ? "md:justify-end" : "md:justify-start"
           }`}
         >
           {/* Date */}
           <div
-            className={`absolute top-1/2 w-1/2 -translate-y-1/2 transform text-center ${
+            className={`mb-2 w-full text-center md:absolute md:top-1/2 md:w-1/2 md:-translate-y-1/2 md:transform md:text-left ${
               index % 2 === 0
-                ? "left-0 pr-10 text-right"
-                : "right-0 pl-10 text-left"
+                ? "md:left-0 md:pr-10 md:text-right"
+                : "md:right-0 md:pl-10 md:text-left"
             }`}
           >
             <span className="text-text/80 bg-background/80 border-primary group-hover:shadow-primary inline-block rounded-lg border px-4 py-2 text-lg font-semibold shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
@@ -135,14 +112,14 @@ const Timeline = () => {
             </span>
           </div>
 
-          {/* Point de connexion (cercle) */}
-          <div
-            className={`bg-primary absolute top-1/2 left-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 transform rounded-full transition-all duration-300 group-hover:scale-110`}
-          ></div>
+          {/* Point de connexion */}
+          <div className="bg-primary absolute top-1/2 left-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 transform rounded-full transition-all duration-300 group-hover:scale-110 md:block"></div>
 
           {/* Carte événement */}
           <div
-            className={`relative w-1/2 ${index % 2 === 0 ? "pl-10" : "pr-10"}`}
+            className={`relative mt-4 w-full md:mt-0 md:w-1/2 ${
+              index % 2 === 0 ? "pl-0 md:pl-10" : "pr-0 md:pr-10"
+            }`}
           >
             <div className="border-primary bg-opacity-10 text-text group-hover:bg-opacity-20 group-hover:shadow-primary relative rounded-xl border p-6 shadow-lg backdrop-blur-lg transition-all duration-300 ease-in-out group-hover:-translate-y-1 group-hover:shadow-md">
               <h3 className="text-accent mb-2 text-xl font-semibold">

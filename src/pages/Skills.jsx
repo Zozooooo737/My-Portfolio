@@ -4,7 +4,7 @@ import { skillsData } from "@/data/skillsData";
 
 const Skills = () => {
   return (
-    <div className="w-full">
+    <div className="w-full pt-10">
       <SkillsList skills={skillsData} />
     </div>
   );

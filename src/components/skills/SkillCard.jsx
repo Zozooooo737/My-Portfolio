@@ -10,7 +10,6 @@ const SkillCard = ({ skill }) => {
     setExpanded(!expanded);
   };
 
-  // Gestion du clic extérieur
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -27,7 +26,6 @@ const SkillCard = ({ skill }) => {
     };
   }, [expanded]);
 
-  // Récupère les projets complets à partir des IDs
   const associatedProjects = getProjectsByIds(skill.projects || []);
 
   return (
@@ -44,7 +42,7 @@ const SkillCard = ({ skill }) => {
               className="mb-4 h-16 w-16 object-contain"
             />
           )}
-          <h3 className="text-bold text-center text-xl font-bold text-gray-900">
+          <h3 className="text-bold text-center text-xl font-bold text-gray-900 md:text-2xl">
             {skill.name}
           </h3>
         </div>
@@ -62,11 +60,11 @@ const SkillCard = ({ skill }) => {
       {expanded && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
-          onClick={() => setExpanded(false)} // Ferme au clic sur l'arrière-plan
+          onClick={() => setExpanded(false)}
         >
           <div
             ref={modalRef}
-            className="relative w-full max-w-md rounded-2xl bg-white p-8 shadow-xl"
+            className="relative w-full max-w-xs rounded-2xl bg-white p-8 shadow-xl sm:max-w-sm md:max-w-md"
             onClick={(e) => e.stopPropagation()}
           >
             <button

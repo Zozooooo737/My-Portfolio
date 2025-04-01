@@ -11,8 +11,6 @@ const projectsData = [
       "skill-mechanics",
       "skill-machining",
       "skill-teamwork",
-      "skill-python",
-      "skill-teamwork",
     ],
     thumbnail: scorpixImages.minia,
     description:

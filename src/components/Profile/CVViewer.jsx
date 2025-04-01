@@ -18,7 +18,8 @@ const CVViewer = () => {
     <section className="border-primary bg-background mb-20 rounded-xl border-2 p-8 text-center shadow-[0_0_20px_5px_rgba(119,131,238,0.3)]">
       <h2 className="text-text mb-6 text-3xl font-bold">Mon CV</h2>
 
-      <div className="mb-4 h-[600px] w-full overflow-hidden rounded-xl shadow-md">
+      {/* Aperçu du CV uniquement sur écrans moyens et plus */}
+      <div className="mb-4 hidden h-[600px] w-full overflow-hidden rounded-xl shadow-md md:block">
         <iframe
           src={cvUrl}
           title="CV - Enzo BOTTURA"
@@ -30,6 +31,7 @@ const CVViewer = () => {
         )}
       </div>
 
+      {/* Le bouton de téléchargement est visible tout le temps */}
       <button
         onClick={handleDownload}
         className="bg-primary hover:bg-secondary rounded-xl px-4 py-2 font-semibold text-white shadow-md transition-all duration-300"

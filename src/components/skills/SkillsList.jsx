@@ -30,12 +30,12 @@ const SkillCategory = ({ category }) => {
   }, [category.skills]);
 
   return (
-    <div className="w-full">
+    <div className="mb-20 w-full">
       <h2 className="mb-8 text-center text-2xl font-bold text-gray-200 md:text-3xl">
         {category.name}
       </h2>
 
-      <div className="relative flex w-full justify-center">
+      <div className="relative w-full">
         {/* Masques de dégradé conditionnels */}
         {showFade && (
           <>
@@ -46,11 +46,11 @@ const SkillCategory = ({ category }) => {
 
         <div
           ref={containerRef}
-          className="scrollbar-hide flex max-w-full overflow-x-auto px-4" // Ajout de scrollbar-hide
+          className="scrollbar-hide flex w-full snap-x snap-mandatory overflow-x-auto pr-[calc(50%-50vw)] pl-[calc(50%-50vw)] md:flex-wrap"
         >
-          <div className="mx-auto flex items-center gap-6">
+          <div className="mx-auto flex items-center gap-6 px-[50vw]">
             {category.skills.map((skill, index) => (
-              <div key={index} className="flex-shrink-0">
+              <div key={index} className="flex-shrink-0 snap-center">
                 <SkillCard skill={skill} />
               </div>
             ))}

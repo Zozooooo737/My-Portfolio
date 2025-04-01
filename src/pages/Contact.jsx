@@ -1,6 +1,5 @@
 import { FiMail, FiPhone, FiGithub, FiLinkedin } from "react-icons/fi";
-import { FaDiscord, FaUniversity, FaInstagram } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaUniversity } from "react-icons/fa";
 
 // Composant Carte de Contact Principale
 const ContactCard = ({ icon, title, value, link }) => (
@@ -10,44 +9,37 @@ const ContactCard = ({ icon, title, value, link }) => (
     rel="noopener noreferrer"
     className="group block"
   >
-    <div className="border-primary bg-background hover:bg-secondary rounded-lg border p-4 transition-all duration-300">
-      <div className="flex items-center gap-4">
-        <div className="text-2xl">{icon}</div>
+    <div className="border-primary bg-background hover:bg-secondary rounded-lg border p-4 transition-all duration-300 sm:p-6">
+      <div className="flex items-center gap-3 sm:gap-4">
+        <div className="text-xl sm:text-2xl">{icon}</div>
         <div>
-          <h3 className="font-medium">{title}</h3>
-          <p className="text-accent group-hover:underline">{value}</p>
+          <h3 className="text-base font-medium sm:text-lg">{title}</h3>
+          <p className="text-accent text-sm group-hover:underline sm:text-base">
+            {value}
+          </p>
         </div>
       </div>
     </div>
   </a>
 );
 
-// Composant Carte Réseaux Secondaires
-const SmallContactCard = ({ icon, title, value }) => (
-  <div className="bg-background flex items-center gap-3 rounded-lg border border-gray-700 p-3">
-    <div className="text-primary text-xl">{icon}</div>
-    <div>
-      <p className="text-sm font-medium">{title}</p>
-      <p className="text-xs text-gray-400">{value}</p>
-    </div>
-  </div>
-);
-
 const Contact = () => {
   return (
-    <div className="bg-background/50 b text-text w-full px-50 pt-15 pb-20">
+    <div className="text-text w-full px-4 py-10 sm:px-8 md:px-10 lg:px-20 xl:px-50 xl:pt-15 xl:pb-20">
       <div className="mx-auto max-w-4xl">
-        <h1 className="text-primary mb-2 text-5xl font-bold">Contactez-moi</h1>
-        <p className="mb-10 text-lg">
+        <h1 className="text-primary mb-2 text-3xl font-bold sm:text-4xl md:text-5xl">
+          Contactez-moi
+        </h1>
+        <p className="mb-8 text-base sm:mb-10 sm:text-lg">
           Disponible pour des projets, des opportunités professionnelles ou des
           collaborations.
         </p>
 
         {/* Section Principale */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
           {/* Contacts Essentiels */}
-          <div className="space-y-6">
-            <h2 className="text-secondary text-2xl font-semibold">
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="text-secondary text-xl font-semibold sm:text-2xl">
               Coordonnées principales
             </h2>
 
@@ -74,8 +66,8 @@ const Contact = () => {
           </div>
 
           {/* Réseaux Professionnels */}
-          <div className="space-y-6">
-            <h2 className="text-secondary text-2xl font-semibold">
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="text-secondary text-xl font-semibold sm:text-2xl">
               Réseaux professionnels
             </h2>
 
@@ -93,28 +85,6 @@ const Contact = () => {
               link="https://linkedin.com/in/enzo-bottura"
             />
           </div>
-        </div>
-
-        {/* Réseaux Secondaires */}
-        <div className="mt-12">
-          <h2 className="text-secondary mb-4 text-xl font-semibold">
-            Autres réseaux
-          </h2>
-          <div className="flex flex-wrap gap-4">
-            <SmallContactCard
-              icon={<FaDiscord />}
-              title="Discord"
-              value="zozooo737"
-            />
-            <SmallContactCard
-              icon={<FaInstagram />}
-              title="Instagram"
-              value="@zozooo.737"
-            />
-          </div>
-          <p className="mt-2 text-sm text-gray-400">
-            Ces réseaux sont à usage personnel
-          </p>
         </div>
       </div>
     </div>
