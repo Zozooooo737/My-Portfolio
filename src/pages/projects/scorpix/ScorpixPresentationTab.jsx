@@ -1,5 +1,6 @@
 import { scorpixImages, scorpixVideos } from "@/assets/ScorpixAssets";
 import { logos } from "@/assets/Assets";
+import { skillsData } from "@/data/skillsData";
 import Media from "@/components/ui/Media";
 import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
@@ -8,15 +9,92 @@ import Tag from "@/components/projects/Tag";
 import Quote from "@/components/ui/Quote";
 
 export default function PresentationTab() {
-  const tags = [1, 2, 3, 12];
+  const allSkills = skillsData.flatMap((category) => category.skills);
+
+  const projectSkills = allSkills.filter(
+    (skill) => skill.projects && skill.projects.includes("project-scorpix"),
+  );
+
+  const maxTags = 5;
 
   return (
-    <div>
-      <div className="w-ful flex space-x-10 p-3">
-        <div className="w-[70%]">
+    <div className="px-2 md:px-0">
+      {/* Section Scorpix - Mobile First (en haut sur mobile) */}
+      <div className="mb-6 block md:hidden">
+        <div className="border-primary flex h-full w-full flex-col gap-y-2 border-2 p-2 text-center">
+          <h1 className="bg-primary w-full py-2 text-3xl font-bold">Scorpix</h1>
+          <Media
+            mediaItems={[
+              {
+                type: "image",
+                src: scorpixImages.portrait1,
+                alt: "Photo du Scorpix",
+              },
+              {
+                type: "image",
+                src: scorpixImages.portrait2,
+                alt: "Photo du Scorpix 2",
+              },
+              {
+                type: "image",
+                src: scorpixImages.fang,
+                alt: "Scorpix - Pince",
+              },
+              {
+                type: "image",
+                src: scorpixImages.paw,
+                alt: "Scorpix - Patte",
+              },
+              {
+                type: "image",
+                src: scorpixImages.tail,
+                alt: "Scorpix - Queue",
+              },
+            ]}
+          />
+          <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
+          <div className="space-y-2 px-2">
+            <div className="flex items-center">
+              <img
+                src={logos.group}
+                className="bg-primary w-6 rounded-md p-1"
+              />
+              <p className="ml-3 text-lg">Projet de groupe (5)</p>
+            </div>
+            <div className="flex items-center">
+              <img src={logos.date} className="bg-primary w-6 rounded-md p-1" />
+              <p className="ml-3 text-lg">Juin 2024</p>
+            </div>
+            <div className="flex items-center">
+              <img
+                src={logos.duration}
+                className="bg-primary w-6 rounded-md p-1"
+              />
+              <p className="ml-3 text-lg">8 mois</p>
+            </div>
+          </div>
+          <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
+          <div className="flex flex-wrap justify-center gap-2">
+            {projectSkills.slice(0, maxTags).map((skill) => (
+              <Tag
+                key={skill.id}
+                name={skill.name}
+                logo={skill.logo}
+                color={skill.color}
+                isTextMode={true}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Contenu principal */}
+      <div className="flex flex-col p-2 md:flex-row md:space-y-0 md:space-x-10 md:p-3">
+        {/* Section Texte */}
+        <div className="w-full md:w-[70%]">
           <Text>
             Nous avons réalisé ce projet dans le cadre du Projet Ingénieur
-            eXploration en première année d’ESILV, <b>PIX 1</b>. Notre objectif
+            eXploration en première année d'ESILV, <b>PIX 1</b>. Notre objectif
             était de réaliser un <b>hexapode mécanique</b> capable de se
             déplacer de façon rectiligne. Nous devions réaliser l'hexapode de A
             à Z sachant que deux moteurs et une batterie nous ont été fournis.
@@ -87,68 +165,82 @@ export default function PresentationTab() {
             </List>
           </ul>
         </div>
-        <div className="item-center border-primary flex h-full w-[30%] flex-col gap-y-2 border-2 p-2 text-center">
-          <h1 className="bg-primary w-full pt-2 pb-3 text-4xl font-bold">
-            Scorpix
-          </h1>
-          <Media
-            mediaItems={[
-              {
-                type: "image",
-                src: scorpixImages.portrait1,
-                alt: "Photo du Scorpix",
-              },
-              {
-                type: "image",
-                src: scorpixImages.portrait2,
-                alt: "Photo du Scorpix 2",
-              },
-              {
-                type: "image",
-                src: scorpixImages.fang,
-                alt: "Scorpix - Pince",
-              },
-              {
-                type: "image",
-                src: scorpixImages.paw,
-                alt: "Scorpix - Patte",
-              },
-              {
-                type: "image",
-                src: scorpixImages.tail,
-                alt: "Scorpix - Queue",
-              },
-            ]}
-          />
-          <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
-          <div className="space-y-2 px-5">
-            <div className="flex items-center">
-              <img
-                src={logos.group}
-                className="bg-primary w-8 rounded-md p-1"
-              />
-              <p className="ml-4 text-xl">Projet de groupe (5)</p>
+
+        {/* Section Scorpix - Version Desktop (à droite) */}
+        <div className="hidden md:block md:w-[30%]">
+          <div className="border-primary flex flex-col gap-y-2 border-2 p-2 text-center">
+            <h1 className="bg-primary w-full py-2 text-4xl font-bold">
+              Scorpix
+            </h1>
+            <Media
+              mediaItems={[
+                {
+                  type: "image",
+                  src: scorpixImages.portrait1,
+                  alt: "Photo du Scorpix",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.portrait2,
+                  alt: "Photo du Scorpix 2",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.fang,
+                  alt: "Scorpix - Pince",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.paw,
+                  alt: "Scorpix - Patte",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.tail,
+                  alt: "Scorpix - Queue",
+                },
+              ]}
+            />
+            <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
+            <div className="space-y-2 px-5">
+              <div className="flex items-center">
+                <img
+                  src={logos.group}
+                  className="bg-primary w-8 rounded-md p-1"
+                />
+                <p className="ml-4 text-xl">Projet de groupe (5)</p>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src={logos.date}
+                  className="bg-primary w-8 rounded-md p-1"
+                />
+                <p className="ml-4 text-xl">Juin 2024</p>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src={logos.duration}
+                  className="bg-primary w-8 rounded-md p-1"
+                />
+                <p className="ml-4 text-xl">8 mois</p>
+              </div>
             </div>
-            <div className="flex items-center">
-              <img src={logos.date} className="bg-primary w-8 rounded-md p-1" />
-              <p className="ml-4 text-xl">Juin 2024</p>
+            <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
+            <div className="flex flex-wrap justify-center gap-2">
+              {projectSkills.slice(0, maxTags).map((skill) => (
+                <Tag
+                  key={skill.id}
+                  name={skill.name}
+                  logo={skill.logo}
+                  color={skill.color}
+                  isTextMode={true}
+                />
+              ))}
             </div>
-            <div className="flex items-center">
-              <img
-                src={logos.duration}
-                className="bg-primary w-8 rounded-md p-1"
-              />
-              <p className="ml-4 text-xl">8 mois</p>
-            </div>
-          </div>
-          <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
-          <div className="flex flex-wrap items-center justify-center space-y-2 space-x-2">
-            {tags.slice(0, 5).map((id, index) => (
-              <Tag key={index} id={id} isTextMode={true} />
-            ))}
           </div>
         </div>
       </div>
+
       <Title>Répartition en Sous-Systèmes</Title>
       <Text>
         Afin de réaliser notre hexapode efficacement, nous avons décidé de
@@ -159,27 +251,19 @@ export default function PresentationTab() {
           <b>Transmission :</b> Assure la distribution équilibrée de l'énergie
           aux six pattes.
         </List>
-
         <List>
           <b>Mécanisme de la patte :</b> Convertit le mouvement circulaire en
           déplacement linéaire.
         </List>
-
         <List>
           <b>Patte :</b> Conçues pour assurer stabilité et adhérence au sol.
         </List>
-
         <List>
-          <b>Structure général :</b> Support et intégration des différents
+          <b>Structure générale :</b> Support et intégration des différents
           sous-systèmes.
         </List>
       </ul>
-      <Text>
-        Nous réaliserons pour chaque partie de notre hexapode, des modélisations
-        qui aboutiront sur la conception de prototypes. Puis nous noterons, les
-        problèmes rencontrés afin d'étudier les solutions possibles qui
-        permettront la réalisation d'autres prototypes.
-      </Text>
+
       <Title>Méthode de Conception et Processus de Fabrication</Title>
       <Text>
         Nous avons suivi une approche en itérations successives, s'articulant
@@ -210,19 +294,22 @@ export default function PresentationTab() {
           <b>Itérations :</b> Améliorations basées sur les observations terrain.
         </List>
       </ul>
+
       <Title>Prototype Final et Performances</Title>
       <Text>
         L'hexapode final est un robot pleinement fonctionnel, capable de se
-        déplacer efficacement en adoptant une locomotion tripode optimisée. Ses
-        principales caractéristiques sont :
+        déplacer efficacement en adoptant une locomotion tripode optimisée.
       </Text>
-      <ul>
-        <div className="flex w-full items-center space-x-10 p-7">
+
+      {/* Section Vidéos et Citations */}
+      <div className="mt-10 flex flex-col gap-y-16 px-4 md:px-7">
+        {/* Bloc 1 : quote / media */}
+        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row md:items-center md:gap-x-10">
           <Quote title="Modulable">
             Un prototype adaptable, capable d'accueillir différents modules pour
             répondre à des besoins spécifiques et étendre ses fonctionnalités.
           </Quote>
-          <div className="w-[60%]">
+          <div className="w-full md:w-[60%]">
             <Media
               mediaItems={[
                 {
@@ -235,8 +322,15 @@ export default function PresentationTab() {
           </div>
         </div>
 
-        <div className="flex w-full items-center space-x-10 p-7">
-          <div className="w-[60%]">
+        {/* Bloc 2 : media / quote */}
+        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row-reverse md:items-center md:gap-x-10">
+          <Quote title="Stabilité et Précision">
+            Une conception robuste avec des pattes indépendantes mais
+            parfaitement synchronisées, permettant une locomotion fluide sur
+            terrain plat. Les extrémités des pattes sont modulables pour
+            s'adapter à différents types de terrains.
+          </Quote>
+          <div className="w-full md:w-[60%]">
             <Media
               mediaItems={[
                 {
@@ -247,25 +341,16 @@ export default function PresentationTab() {
               ]}
             />
           </div>
-          <Quote title="Stabilité et Précision">
-            Une conception robuste avec des pattes indépendantes mais
-            parfaitement synchronisées, permettant une locomotion fluide sur
-            terrain plat. Les extrémités des pattes sont modulables pour
-            s'adapter à différents types de terrains. Le système est si
-            résilient qu'il peut continuer à fonctionner même avec une patte en
-            moins.
-          </Quote>
         </div>
 
-        <div className="flex w-full items-center space-x-10 p-7">
+        {/* Bloc 3 : quote / media */}
+        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row md:items-center md:gap-x-10">
           <Quote title="Transmission optimisée">
             Un système d'engrenages conçu pour minimiser les frictions,
             réduisant ainsi les pertes d'énergie et améliorant la
-            synchronisation des pattes. Extensible avec un moteur supplémentaire
-            pour un couple accru, il peut également alimenter des systèmes
-            externes, comme animer une queue ou une mandibule.
+            synchronisation des pattes.
           </Quote>
-          <div className="w-[60%]">
+          <div className="w-full md:w-[60%]">
             <Media
               mediaItems={[
                 {
@@ -278,46 +363,38 @@ export default function PresentationTab() {
           </div>
         </div>
 
-        <div className="flex w-full items-center space-x-10 p-7">
-          <div className="w-[60%]">
+        {/* Bloc 4 : media / quote */}
+        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row-reverse md:items-center md:gap-x-10">
+          <Quote title="Facilité de maintenance">
+            L'hexapode est entièrement démontable et remontable, avec des
+            sous-parties indépendantes pour une réparation rapide.
+          </Quote>
+          <div className="w-full md:w-[60%]">
             <Media
               mediaItems={[
                 {
                   type: "video",
                   src: scorpixVideos.disassembly,
-                  alt: "Scorpix peut être entierement démonté et remonté",
+                  alt: "Scorpix peut être entièrement démonté et remonté",
                 },
                 {
                   type: "video",
                   src: scorpixVideos.assembly,
-                  alt: "Scorpix peut être entierement démonté et remonté",
+                  alt: "Scorpix peut être entièrement démonté et remonté",
                 },
               ]}
             />
           </div>
-          <Quote title="Facilité de maintenance">
-            L'hexapode est entièrement démontable et remontable, avec des
-            sous-parties indépendantes pour une réparation rapide en cas de
-            pièce cassée. Les liaisons ont été calibrées avec précision pour
-            garantir des connexions optimales, et les composants sont facilement
-            accessibles pour des ajustements rapides.
-          </Quote>
         </div>
 
-        <div className="flex w-full items-center space-x-10 p-7">
+        {/* Bloc 5 : quote / media */}
+        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row md:items-center md:gap-x-10">
           <Quote title="Un Hexapode Prêt à Tout">
             L'hexapode Scorpix est conçu pour relever tous les défis. Grâce à sa
-            conception modulaire et adaptable, il peut s’adapter à de multiples
-            scénarios : transporter une charge, gravir des pentes, et même
-            fonctionner avec une patte en moins ou deux pattes supplémentaires.
-            Son architecture flexible permet également d’y intégrer une
-            mandibule pour la préhension ou une queue pour l’équilibre, selon
-            les besoins. Cette polyvalence en fait un véritable caméléon
-            mécanique, capable d'évoluer et de s’adapter à chaque mission avec
-            efficacité.
+            conception modulaire et adaptable, il peut s'adapter à de multiples
+            scénarios.
           </Quote>
-
-          <div className="w-[60%]">
+          <div className="w-full md:w-[60%]">
             <Media
               mediaItems={[
                 {
@@ -328,131 +405,99 @@ export default function PresentationTab() {
                 {
                   type: "video",
                   src: scorpixVideos.fang,
-                  alt: "Scorpix équipé de sa mandibule fonctionnelle pour dégager le passage",
+                  alt: "Scorpix équipé de sa mandibule fonctionnelle",
                 },
                 {
                   type: "video",
                   src: scorpixVideos.load,
                   alt: "Scorpix capable de transporter une charge",
                 },
+              ]}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Section Showroom */}
+      <div className="mt-8">
+        <Title>Showroom PIX 1 et Prix</Title>
+        <Text>
+          Le projet a été présenté lors du Showroom PIX 1, le 4 juin 2024, un
+          événement ESILV permettant à chaque équipe de démontrer le travail
+          accompli devant un jury et les autres participants.
+        </Text>
+
+        <div className="mx-auto w-full px-4 pt-6 md:w-[80%] md:px-10">
+          <Media
+            mediaItems={[
+              {
+                type: "image",
+                src: scorpixImages.foponce,
+                alt: "Photo du stand de notre équipe PIX 34 - FOPONCÉ CORP",
+              },
+            ]}
+          />
+        </div>
+
+        <div className="mt-6">
+          <Title size={2}>Épreuves du Concours</Title>
+          <Text>
+            Lors de cette journée, l'hexapode a été soumis à plusieurs épreuves
+            afin de connaitre ses limites et mettre en valeur ses qualités.
+          </Text>
+        </div>
+
+        <div className="flex flex-col pt-6 md:flex-row">
+          <ul>
+            <List>
+              <b>Déplacement rectiligne :</b> Cette épreuve évaluait la
+              précision et l'efficacité du mouvement de l'hexapode.
+            </List>
+            <List>
+              <b>Transport d'une charge :</b> Ce test mesurait la capacité de
+              l'hexapode à transporter une charge sur une certaine distance.
+            </List>
+            <List>
+              <b>Gravir une pente :</b> Cette épreuve testait la capacité de
+              l'hexapode à franchir une pente dont l'inclinaison augmentait
+              progressivement.
+            </List>
+            <List>
+              <b>Epreuve spéciale de la piscine à boules :</b> Cette épreuve
+              consistait à traverser un bac rempli de boules, un défi
+              particulièrement exigeant.
+            </List>
+          </ul>
+          <div className="mt-4 w-full md:mt-0 md:ml-6 md:w-[30%]">
+            <Media
+              mediaItems={[
                 {
-                  type: "video",
-                  src: scorpixVideos.climbing,
-                  alt: "Scorpix capable de gravir des pentes rugueuses",
-                },
-                {
-                  type: "video",
-                  src: scorpixVideos.without,
-                  alt: "Scorpix capable de fonctionner avec une patte en moins",
-                },
-                {
-                  type: "video",
-                  src: scorpixVideos.extended,
-                  alt: "Scorpix capable d'avoir des pattes en plus",
+                  type: "image",
+                  src: scorpixImages.trial,
+                  alt: "Epreuve spéciale de la piscine à boule.",
                 },
               ]}
             />
           </div>
         </div>
-      </ul>
-      <Title>Showroom PIX 1 et Prix</Title>
-      <Text>
-        Le projet a été présenté lors du Showroom PIX 1, le 4 juin 2024, un
-        événement ESILV permettant à chaque équipe de démontrer le travail
-        accompli devant un jury et les autres participants. Notre équipe
-        s'appelait "FOPONCÉ CORP", en référence à la partie montage des pièces
-        en bois qui pouvait parfois être compliqué sans un petit coup de
-        ponçage.
-      </Text>
-      <div className="mx-auto w-[80%] justify-center px-10 pt-10 pb-0">
-        <Media
-          mediaItems={[
-            {
-              type: "image",
-              src: scorpixImages.foponce,
-              alt: "Photo du stand de notre équipe PIX 34 - FOPONCÉ CORP",
-            },
-          ]}
-        />
-      </div>
-      <div>
-        <Title size={2}>Épreuves du Concours</Title>
+
+        <Title size={2}>Résultat du Concours</Title>
         <Text>
-          Lors de cette journée, l'hexapode a été soumis à plusieurs épreuves
-          afin de connaitre ses limites et mettre en valeur ses qualités.
+          Les performances de Scorpix ont été remarquées, notamment pour son
+          ingénierie bien optimisée et sa conception modulaire.
         </Text>
-      </div>
-      <div className="flex pt-6">
-        <ul className="text-justify">
-          <List>
-            <b>Déplacement rectiligne :</b> Cette épreuve évaluait la précision
-            et l’efficacité du mouvement de l’hexapode. L’objectif était
-            d’atteindre une ligne d’arrivée placée à une distance de plus en
-            plus grande. Grâce à sa mécanique optimisée, Scorpix a relevé ce
-            défi avec succès, terminant l’épreuve en un temps record.
-          </List>
-          <List>
-            <b>Transport d'une charge :</b> Ce test mesurait la capacité de
-            l’hexapode à transporter une charge sur une certaine distance. Nous
-            devions déplacer une petite bouteille remplie de sable.
-            Heureusement, notre module initialement conçu pour transporter une
-            canette s’est avéré parfaitement adapté à cette tâche, à condition
-            de positionner la bouteille à l’envers. Scorpix a ainsi accompli
-            cette épreuve avec brio, remportant l’intégralité du défi haut la
-            main.
-          </List>
-          <List>
-            <b>Gravir une pente :</b> Cette épreuve testait la capacité de
-            l’hexapode à franchir une pente dont l’inclinaison augmentait
-            progressivement. Au départ, Scorpix rencontrait des difficultés et
-            glissait sur la surface, rendant l’ascension compliquée. Cependant,
-            grâce à ses pattes amovibles, il a pu surmonter les deux premiers
-            niveaux avec succès. Malheureusement, les pentes aux inclinaisons
-            les plus élevées se sont révélées trop exigeantes, mettant en
-            évidence les limites d’adhérence de ses pattes sur des surfaces très
-            inclinées.
-          </List>
-          <List>
-            <b>Epreuve spécial de la piscine à boules :</b> Cette épreuve
-            consistait à traverser un bac rempli de boules, un défi
-            particulièrement exigeant pour nos machines. Malheureusement,
-            Scorpix n’était pas adapté à cet environnement. Ses pattes fines
-            s’enfonçaient entre les boules, l’empêchant de se dégager et le
-            laissant coincé au fond du bac. Malgré cet échec, cette épreuve
-            s’est révélée ludique et amusante, générant un fort engouement lors
-            du Showroom PIX 1. Un moment mémorable où chaque équipe a pu tester
-            les limites de son hexapode dans une ambiance animée !
-          </List>
-        </ul>
-        <div className="w-[30%]">
+
+        <div className="mx-auto w-full pt-5 md:w-[60%]">
           <Media
             mediaItems={[
               {
                 type: "image",
-                src: scorpixImages.trial,
-                alt: "Epreuve spécial de la piscine à boule.",
+                src: scorpixImages.result,
+                alt: "Photo de notre équipe FOPONCÉ CORP sur le podium du Showroom",
               },
             ]}
           />
         </div>
-      </div>
-      <Title size={2}>Résultat du Concours</Title>
-      <Text>
-        Les performances de Scorpix ont été remarquées, notamment pour son
-        ingénierie bien optimisée et sa conception modulaire. Cette
-        reconnaissance marque une réussite technique et une validation du
-        travail réalisé.
-      </Text>
-      <div className="mx-auto w-[60%] pt-5">
-        <Media
-          mediaItems={[
-            {
-              type: "image",
-              src: scorpixImages.result,
-              alt: "Photo de notre équipe FOPONCÉ CORP sur le podium du Showroom",
-            },
-          ]}
-        />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export default function Card({
   skills = [],
 }) {
   return (
-    <div className="h-full w-full px-6 py-10 sm:px-10 sm:pt-10 sm:pb-20 md:px-10 md:pt-20 md:pb-20 lg:px-0 lg:py-0">
+    <div className="h-full w-full px-6 pb-22 sm:px-10 sm:pt-10 sm:pb-20 md:px-10 md:pt-20 md:pb-20 lg:px-0 lg:py-0">
       {" "}
       <Link to={`/projects/${link}`}>
         <div className="bg-primary group border-primary hover:border-accent relative h-full w-full cursor-pointer content-end items-end overflow-hidden rounded-2xl border-4 p-6 transition-transform duration-200 hover:scale-110 lg:h-88 lg:w-130">

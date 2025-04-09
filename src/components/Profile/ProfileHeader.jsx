@@ -31,20 +31,20 @@ const ProfileHeader = () => {
             </div>
             <div>
               <p className="text-accent text-base font-semibold md:text-lg">
-                🎓 Formation
+                🎓 Ecole
               </p>
               <p className="text-base md:text-lg">ESILV</p>
             </div>
             <div>
               <p className="text-accent text-base font-semibold md:text-lg">
-                📧 Email
+                📚 Formation
               </p>
-              <p className="text-base md:text-lg">enzo.bottura137@gmail.com</p>
+              <p className="text-base md:text-lg">Ingénieur</p>
             </div>
           </div>
 
           {/* Personnalité */}
-          <div className="mt-4">
+          <div className="mt-8">
             <p className="text-accent text-base font-semibold md:text-lg">
               🧠 Personnalité
             </p>
@@ -119,7 +119,7 @@ const ProfileHeader = () => {
         </div>
 
         {/* Phrase accrocheuse */}
-        <p className="animate-typing col-span-2 pt-4 text-center text-xl text-gray-300 md:text-2xl">
+        <p className="animate-typing col-span-2 pt-8 text-center text-xl text-gray-300">
           🔧 De l'idée à la réalisation : j'explore, j'innove et je concrétise
           des projets qui me passionnent.
         </p>
@@ -129,11 +129,11 @@ const ProfileHeader = () => {
       <div className="border-primary bg-background relative block w-full overflow-hidden rounded-2xl border-2 p-4 shadow-[0_0_20px_5px_rgba(119,131,238,0.3)] md:hidden">
         {/* Photo et Nom */}
         <div className="flex flex-col items-center gap-4">
-          <div className="border-primary h-24 w-24 overflow-hidden rounded-full border-4 shadow-[0_0_10px_2px_rgba(119,131,238,0.3)]">
+          <div className="border-primary h-34 w-34 overflow-hidden rounded-full border-4 shadow-[0_0_10px_2px_rgba(119,131,238,0.3)]">
             <img
               src={photos.profil}
               alt="Enzo Bottura"
-              className="h-full w-full object-cover"
+              className="h-full w-full scale-130 object-cover"
             />
           </div>
           <div className="text-center">
@@ -155,8 +155,12 @@ const ProfileHeader = () => {
               value: "Île-de-France, France",
             },
             { icon: "🎂", label: "Âge", value: "20 ans" },
-            { icon: "🎓", label: "Formation", value: "ESILV" },
-            { icon: "📧", label: "Email", value: "enzo.bottura137@gmail.com" },
+            { icon: "🎓", label: "Ecole", value: "ESILV" },
+            {
+              icon: "📚",
+              label: "Formation",
+              value: "Ingénieur",
+            },
           ].map((item, index) => (
             <div
               key={index}

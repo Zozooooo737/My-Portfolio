@@ -5,7 +5,7 @@ import GalleryTab from "@/pages/projects/scorpix/ScorpixGalleryTab";
 
 export default function Scorpix() {
   return (
-    <div className="bg-background/75 w-6xl p-5 pt-10 text-gray-300">
+    <div className="bg-background/75 w-full max-w-6xl text-gray-300 sm:p-4 sm:pt-5 md:p-5 md:pt-10">
       <Tabs>
         <Tab title="Présentation">
           <PresentationTab />
@@ -13,7 +13,6 @@ export default function Scorpix() {
         <Tab title="Galerie">
           <GalleryTab />
         </Tab>
-        {/* Ajoutez d'autres Tabs ici si nécessaire */}
       </Tabs>
     </div>
   );
