@@ -27,6 +27,16 @@ const Media = ({ mediaItems }) => {
         className="relative h-full w-full"
         style={{ paddingBottom: "40px" }}
       >
+        {/* Ajout de padding aux bullets ici */}
+        <style>
+          {`
+            .swiper-pagination {
+              padding-left: 4rem;
+              padding-right: 4rem;
+            }
+        `}
+        </style>
+
         {mediaItems.map((media, index) => (
           <SwiperSlide key={index} className="flex flex-col">
             <div className="flex-1">
@@ -39,7 +49,6 @@ const Media = ({ mediaItems }) => {
               ) : (
                 <video
                   controls
-                  autoPlay
                   loop
                   muted
                   className="h-full w-full object-contain"
@@ -48,7 +57,7 @@ const Media = ({ mediaItems }) => {
                 </video>
               )}
             </div>
-            <div className="bg-black/50 py-1 text-center text-sm font-semibold text-white md:py-2 md:text-xl">
+            <div className="bg-black/50 pt-1 pb-5 text-center text-sm font-semibold text-white md:py-2 md:text-xl">
               {media.alt}
             </div>
           </SwiperSlide>
@@ -74,7 +83,7 @@ const Media = ({ mediaItems }) => {
             {/* Fullscreen Close Button */}
             <button
               onClick={toggleFullScreen}
-              className="bg-text border-primary hover:bg-accent absolute top-4 right-4 z-20 rounded-full border-4 p-2 text-lg text-white"
+              className="bg-text border-primary hover:bg-accent text-primary absolute top-4 right-4 z-20 h-13 w-13 rounded-full border-4 p-2 text-lg"
             >
               ✖
             </button>
@@ -92,21 +101,23 @@ const Media = ({ mediaItems }) => {
               style={{ paddingBottom: "50px" }}
             >
               {mediaItems.map((media, index) => (
-                <SwiperSlide key={index} className="flex flex-col">
-                  <div className="flex flex-1 items-center justify-center">
+                <SwiperSlide
+                  key={index}
+                  className="flex flex-col items-center justify-center"
+                >
+                  <div className="flex h-[80vh] w-full items-center justify-center">
                     {media.type === "image" ? (
                       <img
                         src={media.src}
                         alt={media.alt}
-                        className="max-h-[80vh] w-auto object-contain"
+                        className="mx-auto max-h-full w-auto object-contain"
                       />
                     ) : (
                       <video
                         controls
-                        autoPlay
                         loop
                         muted
-                        className="max-h-[80vh] w-auto object-contain"
+                        className="mx-auto max-h-full w-auto object-contain"
                         onClick={(e) => e.stopPropagation()}
                       >
                         <source src={media.src} type="video/mp4" />

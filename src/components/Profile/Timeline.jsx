@@ -84,10 +84,17 @@ const Timeline = () => {
       description:
         "Dévéloppement en équipe d'une solution pour la protection de notre vie privée et de nos données personnelles.",
     },
+    {
+      id: 11,
+      title: "Soft Skills : Intelligence Collective",
+      date: "2025 - Mai",
+      description:
+        "Nous avons exploré des outils collaboratifs pour résoudre des problèmes et prendre des décisions en groupe, en tirant parti de l’intelligence collective.",
+    },
   ];
 
   return (
-    <div className="relative mx-auto w-full max-w-4xl space-y-6 py-12">
+    <div className="relative mx-auto w-full max-w-4xl space-y-6 py-18">
       {/* Ligne Centrale */}
       <div className="from-primary to-secondary absolute top-0 left-1/2 hidden h-full w-[3px] -translate-x-1/2 transform bg-gradient-to-b shadow-[0_0_10px_var(--color-primary)] md:block"></div>
 

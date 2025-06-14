@@ -448,7 +448,7 @@ export default function PresentationTab() {
         </div>
 
         <div className="flex flex-col pt-6 md:flex-row">
-          <ul>
+          <ul className="space-y-10">
             <List>
               <b>Déplacement rectiligne :</b> Cette épreuve évaluait la
               précision et l'efficacité du mouvement de l'hexapode.
@@ -468,7 +468,7 @@ export default function PresentationTab() {
               particulièrement exigeant.
             </List>
           </ul>
-          <div className="mt-4 w-full md:mt-0 md:ml-6 md:w-[30%]">
+          <div className="mt-4 w-full md:mt-0 md:mr-20 md:ml-6 md:w-[30%]">
             <Media
               mediaItems={[
                 {

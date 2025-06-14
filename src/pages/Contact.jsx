@@ -44,13 +44,6 @@ const Contact = () => {
             </h2>
 
             <ContactCard
-              icon={<FiPhone className="text-primary" />}
-              title="Téléphone"
-              value="+33 6 11 46 33 37"
-              link="tel:+33611463337"
-            />
-
-            <ContactCard
               icon={<FiMail className="text-primary" />}
               title="Email Professionnel"
               value="enzo.bottura137@gmail.com"
