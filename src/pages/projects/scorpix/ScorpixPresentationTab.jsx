@@ -484,7 +484,31 @@ export default function PresentationTab() {
         <Title size={2}>Résultat du Concours</Title>
         <Text>
           Les performances de Scorpix ont été remarquées, notamment pour son
-          ingénierie bien optimisée et sa conception modulaire.
+          ingénierie bien optimisée et sa conception modulaire. Le projet a même
+          reçu <strong>le prix de la meilleur esthétique</strong>.
+        </Text>
+
+        <div className="mx-auto w-full pt-5 md:w-[50%]">
+          <Media
+            mediaItems={[
+              {
+                type: "image",
+                src: scorpixImages.price, // Remplace ce nom si besoin
+                alt: "Image du prix d'esthétique reçu par notre Scorpix",
+              },
+            ]}
+          />
+        </div>
+
+        <Text className="pt-4">
+          Mais pour être honnête, je n’ai jamais vu ce prix uniquement comme une
+          récompense visuelle. Pour moi, c’est surtout une manière de saluer le
+          soin qu’on a mis à intégrer le <b>biomimétisme</b> dans chaque aspect
+          du robot. On s’est vraiment inspirés de la morphologie et de la
+          locomotion du scorpion pour concevoir une structure hexapode stable,
+          articulée et fluide dans ses mouvements. L’apparence finale découle
+          directement de cette démarche, ce qui rend l’esthétique du robot
+          cohérente avec sa fonction.
         </Text>
 
         <div className="mx-auto w-full pt-5 md:w-[60%]">

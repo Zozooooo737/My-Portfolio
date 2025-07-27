@@ -31,7 +31,7 @@ const SkillCard = ({ skill }) => {
   return (
     <>
       <div
-        className={`bg-primary hover:border-accent/50 relative mt-2 flex h-full min-w-[300px] flex-col rounded-xl border border-gray-200 p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${expanded ? "z-50 scale-105" : ""} `}
+        className={`bg-primary hover:border-accent/50 relative mt-2 flex h-full min-w-[300px] cursor-pointer flex-col rounded-xl border border-gray-200 p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${expanded ? "z-50 scale-105" : ""}`}
         onClick={handleClick}
       >
         <div className="flex flex-col items-center">
@@ -45,15 +45,6 @@ const SkillCard = ({ skill }) => {
           <h3 className="text-bold text-center text-xl font-bold text-gray-900 md:text-2xl">
             {skill.name}
           </h3>
-        </div>
-
-        <div className="mt-4 w-full">
-          <div className="relative mt-1 h-2 w-full rounded-full bg-black">
-            <div
-              className="bg-accent absolute top-0 left-0 h-full rounded-full"
-              style={{ width: `${skill.level}%` }}
-            ></div>
-          </div>
         </div>
       </div>
 
@@ -87,29 +78,16 @@ const SkillCard = ({ skill }) => {
               </h3>
             </div>
 
-            <div className="mt-6">
-              <div className="flex justify-between text-sm text-gray-600">
-                <span>Niveau de compétence</span>
-                <span>{skill.level}%</span>
-              </div>
-              <div className="relative mt-1 h-3 w-full rounded-full bg-gray-200">
-                <div
-                  className="bg-secondary absolute top-0 left-0 h-full rounded-full"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-            </div>
-
             {skill.description && (
               <p className="mt-6 text-gray-700">{skill.description}</p>
             )}
 
             {associatedProjects.length > 0 && (
-              <div className="mt-6">
+              <div className="mt-6 text-center">
                 <h4 className="mb-3 text-lg font-medium text-gray-800">
                   Projets associés
                 </h4>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap justify-center gap-2">
                   {associatedProjects.map((project) => (
                     <Link
                       key={project.id}

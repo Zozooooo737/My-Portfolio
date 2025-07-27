@@ -24,14 +24,14 @@ export default function Home() {
           onClick={() => handleClick("/projects")}
           className="text-primary hover:text-accent font-bold hover:cursor-pointer"
         >
-          Projets
+          projets
         </button>{" "}
         innovants, je m'efforce chaque jour de développer et d'enrichir mes{" "}
         <button
           onClick={() => handleClick("/projects")}
           className="text-primary hover:text-accent font-bold hover:cursor-pointer"
         >
-          Compétences
+          compétences
         </button>
         .
       </p>

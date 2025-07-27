@@ -43,8 +43,8 @@ const SkillCategory = ({ category }) => {
             <div className="from-background/80 to-background/0 pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r" />
             <div className="from-background/80 to-background/0 pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l" />
 
-            {/* Boutons de scroll gauche/droite */}
-            <div className="absolute top-1/2 z-20 hidden w-full -translate-y-1/2 justify-between px-2 sm:flex md:flex">
+            {/* Bouton gauche */}
+            <div className="pointer-events-none absolute top-1/2 left-0 z-20 hidden -translate-y-1/2 sm:block">
               <button
                 onClick={() =>
                   containerRef.current?.scrollBy({
@@ -69,7 +69,10 @@ const SkillCategory = ({ category }) => {
                   />
                 </svg>
               </button>
+            </div>
 
+            {/* Bouton droite */}
+            <div className="pointer-events-none absolute top-1/2 right-0 z-20 hidden -translate-y-1/2 sm:block">
               <button
                 onClick={() =>
                   containerRef.current?.scrollBy({

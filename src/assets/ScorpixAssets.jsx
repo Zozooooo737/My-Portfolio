@@ -7,6 +7,7 @@ import ScorpixPortraitTail from "@/assets/projects/scorpix/scorpix-portrait-tail
 import ScorpixImageFoponce from "@/assets/projects/scorpix/scorpix-image-foponce.jpeg";
 import ScorpixImageTrial from "@/assets/projects/scorpix/scorpix-image-trial.jpeg";
 import ScorpixImageResult from "@/assets/projects/scorpix/scorpix-image-result.jpg";
+import ScorpixImagePrice from "@/assets/projects/scorpix/scorpix-image-price.jpg";
 
 import ScorpixVideoComplete from "@/assets/projects/scorpix/scorpix-video-complete.mp4";
 import ScorpixVideoPeak from "@/assets/projects/scorpix/scorpix-video-peak.mp4";
@@ -30,6 +31,7 @@ export const scorpixImages = {
   trial: ScorpixImageTrial,
   result: ScorpixImageResult,
   minia: ScorpixMinia,
+  price: ScorpixImagePrice,
 };
 
 export const scorpixVideos = {

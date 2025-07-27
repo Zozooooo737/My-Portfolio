@@ -12,7 +12,7 @@ const ProfileHeader = () => {
             Enzo Bottura
           </h1>
           <p className="mb-2 text-lg text-gray-300 md:text-xl">
-            Étudiant en ingénierie | ESILV (2ème année)
+            Étudiant en ingénierie | ESILV
           </p>
 
           {/* Informations générales */}

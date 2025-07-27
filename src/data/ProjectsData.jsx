@@ -14,7 +14,7 @@ const projectsData = [
     ],
     thumbnail: scorpixImages.minia,
     description:
-      "Durant ma première année d'ingénieur à l'ESILV, le projet annuel était de réaliser un hexapode entièrement mécanique se déplaçant de façon rectiligne.",
+      "Un hexapode mécanique conçu de A à Z pour marcher en ligne droite sans électronique.",
     year: 2023,
     link: "scorpix",
     repository: null,
@@ -36,7 +36,7 @@ const projectsData = [
     ],
     thumbnail: clocloImages.minia,
     description:
-      "Mon premier projet domotique, une horloge dynamique ayant pour fonction de donner l'heure, la date, la température et l'humidité d'un simple geste de la main.",
+      "Une horloge intelligente qui affiche l’heure, la date et la météo intérieure… tout ça d’un simple mouvement de la main.",
     year: 2022,
     link: "cloclo",
     repository: "https://github.com/EnzoBottura/cloclo",
@@ -61,7 +61,7 @@ const projectsData = [
     ],
     thumbnail: boogleZoaImages.minia,
     description:
-      "Dans le cadre du module de POO, j'ai réalisé en binôme un jeu en C# sous forme d'application console accompagné d'une interface graphique et de tests unitaires.",
+      "Jeu en C# réalisé en binôme, combinant console, interface graphique et tests unitaires pour une expérience complète.",
     year: 2023,
     link: "boogle-zoa",
     repository: "https://github.com/EnzoBottura/boogle-zoa",
