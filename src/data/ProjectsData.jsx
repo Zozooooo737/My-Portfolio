@@ -1,6 +1,7 @@
 import { scorpixImages } from "@/assets/ScorpixAssets";
 import { clocloImages } from "@/assets/ClocloAssets";
 import { boogleZoaImages } from "@/assets/BoogleZoaAssets";
+import { tickUpImages } from "@/assets/TickUpAssets";
 
 const projectsData = [
   {
@@ -36,7 +37,7 @@ const projectsData = [
     ],
     thumbnail: clocloImages.minia,
     description:
-      "Une horloge intelligente qui affiche l’heure, la date et la météo intérieure… tout ça d’un simple mouvement de la main.",
+      "Une horloge intelligente qui affiche l’heure, la date et la météo intérieure. Tout ça d’un simple mouvement de la main !",
     year: 2022,
     link: "cloclo",
     repository: "https://github.com/EnzoBottura/cloclo",
@@ -70,6 +71,45 @@ const projectsData = [
       context: "Projet académique en programmation orientée objet",
       role: "Développeur back-end et testeur",
       technologies: ["C#", "NUnit", "WinForms"],
+    },
+  },
+  {
+    id: "project-tick-up",
+    title: "Tick'Up",
+    skills: [
+      "skill-php",
+      "skill-symfony",
+      "skill-twig",
+      "skill-doctrine",
+      "skill-mysql",
+      "skill-html",
+      "skill-css",
+      "skill-bootstrap",
+      "skill-interface",
+      "skill-github",
+      "skill-unit-tests",
+      "skill-teamwork",
+    ],
+    thumbnail: tickUpImages.minia,
+    description:
+      "Application web de réservation de séances de cinéma développée avec Symfony.",
+    year: 2024,
+    link: "tick-up",
+    repository: "https://github.com/EnzoBottura/tick-up",
+    imageAlt: "Interface de réservation de l'application Tick'Up.",
+    details: {
+      context:
+        "Projet académique de développement web visant à concevoir une application complète de réservation en architecture MVC.",
+      role: "Développeur full-stack : conception de la base de données, logique métier, contrôleurs Symfony et interfaces utilisateur.",
+      technologies: [
+        "Symfony",
+        "PHP",
+        "Doctrine ORM",
+        "Twig",
+        "MySQL",
+        "Bootstrap",
+        "GitHub",
+      ],
     },
   },
 ];
