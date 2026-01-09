@@ -89,7 +89,7 @@ export default function PresentationTab() {
       </div>
 
       {/* Contenu principal */}
-      <div className="flex flex-col p-2 md:flex-row md:space-y-0 md:space-x-10 md:p-3">
+      <div className="md:space-x- flex flex-col md:flex-row md:space-y-0">
         {/* Section Texte */}
         <div className="w-full md:w-[70%]">
           <Text>

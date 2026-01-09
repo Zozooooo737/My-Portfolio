@@ -48,6 +48,20 @@ import ScorpixPawProblem3 from "@/assets/projects/scorpix/scorpix-paw-problem-3.
 import ScorpixPawProblem4 from "@/assets/projects/scorpix/scorpix-paw-problem-4.png";
 import ScorpixPawProblem5 from "@/assets/projects/scorpix/scorpix-paw-problem-5.png";
 
+import ScorpixTransmiImage1 from "@/assets/projects/scorpix/scorpix-transmi-image-1.png";
+import ScorpixTransmiImage2 from "@/assets/projects/scorpix/scorpix-transmi-image-2.png";
+import ScorpixTransmiImage3 from "@/assets/projects/scorpix/scorpix-transmi-image-3.png";
+import ScorpixTransmiSchema1 from "@/assets/projects/scorpix/scorpix-transmi-schema-1.png";
+import ScorpixTransmiSchema2 from "@/assets/projects/scorpix/scorpix-transmi-schema-2.png";
+import ScorpixTransmiSchema3 from "@/assets/projects/scorpix/scorpix-transmi-schema-3.png";
+import ScorpixTransmiSchema4 from "@/assets/projects/scorpix/scorpix-transmi-schema-4.png";
+import ScorpixTransmiSupport1 from "@/assets/projects/scorpix/scorpix-transmi-support-1.png";
+import ScorpixTransmiSupport2 from "@/assets/projects/scorpix/scorpix-transmi-support-2.png";
+import ScorpixTransmiMode1 from "@/assets/projects/scorpix/scorpix-transmi-mode-1.png";
+import ScorpixTransmiMode2 from "@/assets/projects/scorpix/scorpix-transmi-mode-2.png";
+import ScorpixTransmiProto1 from "@/assets/projects/scorpix/scorpix-transmi-proto-1.png";
+import ScorpixTransmiProto2 from "@/assets/projects/scorpix/scorpix-transmi-proto-2.png";
+
 export const scorpixImages = {
   portrait1: ScorpixPortrait1,
   portrait2: ScorpixPortrait2,
@@ -102,4 +116,20 @@ export const scorpixPaw = {
   problem3: ScorpixPawProblem3,
   problem4: ScorpixPawProblem4,
   problem5: ScorpixPawProblem5,
+};
+
+export const scorpixTransmi = {
+  image1: ScorpixTransmiImage1,
+  image2: ScorpixTransmiImage2,
+  image3: ScorpixTransmiImage3,
+  schema1: ScorpixTransmiSchema1,
+  schema2: ScorpixTransmiSchema2,
+  schema3: ScorpixTransmiSchema3,
+  schema4: ScorpixTransmiSchema4,
+  support1: ScorpixTransmiSupport1,
+  support2: ScorpixTransmiSupport2,
+  mode1: ScorpixTransmiMode1,
+  mode2: ScorpixTransmiMode2,
+  proto1: ScorpixTransmiProto1,
+  proto2: ScorpixTransmiProto2,
 };

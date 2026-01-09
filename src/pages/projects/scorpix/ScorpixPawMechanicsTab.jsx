@@ -2,7 +2,6 @@ import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
 import Media from "@/components/ui/Media";
 import List from "@/components/ui/List";
-import Quote from "@/components/ui/Quote";
 
 import { scorpixPaw } from "@/assets/ScorpixAssets";
 
@@ -176,7 +175,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixPaw.proto1,
-            alt: "Prototype 1 découpé – 10 janvier 2024",
+            alt: "Prototype 1 - Découpé le 10 janvier 2024",
           },
         ]}
       />
@@ -313,7 +312,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixPaw.proto2,
-            alt: "Prototype 2 découpé – 18 janvier 2024",
+            alt: "Prototype 2 - Découpé le 18 janvier 2024",
           },
         ]}
       />
@@ -419,7 +418,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixPaw.proto3,
-            alt: "Prototype 3 découpé – 9 février 2024",
+            alt: "Prototype 3 - Découpé le 9 février 2024",
           },
         ]}
       />
@@ -484,7 +483,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixPaw.proto4,
-            alt: "Prototype 4 découpé – 15 février 2024",
+            alt: "Prototype 4 - Découpé le 15 février 2024",
           },
         ]}
       />
@@ -558,7 +557,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixPaw.proto5,
-            alt: "Prototype 5 découpé – 23 février 2024",
+            alt: "Prototype 5 - Découpé le 23 février 2024",
           },
         ]}
       />
@@ -629,7 +628,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixPaw.proto6,
-            alt: "Prototype 6 découpé – 9 mars 2024",
+            alt: "Prototype 6 - Découpé le 9 mars 2024",
           },
         ]}
       />
@@ -697,7 +696,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixPaw.proto7,
-            alt: "Prototype 7 découpé – 9 mars 2024",
+            alt: "Prototype 7 - Découpé le 9 mars 2024",
           },
         ]}
       />
