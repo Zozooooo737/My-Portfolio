@@ -304,13 +304,18 @@ export default function PresentationTab() {
       {/* Section Vidéos et Citations */}
       <div className="mt-10 flex flex-col gap-y-16 px-4 md:px-7">
         {/* Bloc 1 : quote / media */}
-        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row md:items-center md:gap-x-10">
-          <Quote title="Modulable">
-            Un prototype adaptable, capable d'accueillir différents modules pour
-            répondre à des besoins spécifiques et étendre ses fonctionnalités.
-          </Quote>
-          <div className="w-full md:w-[60%]">
+        <div className="flex w-full flex-col gap-y-8 md:flex-row md:items-center md:gap-x-10">
+          <div className="md:shrink-0 md:basis-[40%]">
+            <Quote title="Modulable">
+              Un prototype adaptable, capable d'accueillir différents modules
+              pour répondre à des besoins spécifiques et étendre ses
+              fonctionnalités.
+            </Quote>
+          </div>
+
+          <div className="md:shrink-0 md:basis-[60%]">
             <Media
+              size="full"
               mediaItems={[
                 {
                   type: "video",
@@ -323,15 +328,19 @@ export default function PresentationTab() {
         </div>
 
         {/* Bloc 2 : media / quote */}
-        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row-reverse md:items-center md:gap-x-10">
-          <Quote title="Stabilité et Précision">
-            Une conception robuste avec des pattes indépendantes mais
-            parfaitement synchronisées, permettant une locomotion fluide sur
-            terrain plat. Les extrémités des pattes sont modulables pour
-            s'adapter à différents types de terrains.
-          </Quote>
-          <div className="w-full md:w-[60%]">
+        <div className="flex w-full flex-col gap-y-8 md:flex-row-reverse md:items-center md:gap-x-10">
+          <div className="md:shrink-0 md:basis-[40%]">
+            <Quote title="Stabilité et Précision">
+              Une conception robuste avec des pattes indépendantes mais
+              parfaitement synchronisées, permettant une locomotion fluide sur
+              terrain plat. Les extrémités des pattes sont modulables pour
+              s'adapter à différents types de terrains.
+            </Quote>
+          </div>
+
+          <div className="md:shrink-0 md:basis-[60%]">
             <Media
+              size="full"
               mediaItems={[
                 {
                   type: "video",
@@ -344,14 +353,18 @@ export default function PresentationTab() {
         </div>
 
         {/* Bloc 3 : quote / media */}
-        <div className="flex w-full flex-col items-center gap-y-8 md:flex-row md:items-center md:gap-x-10">
-          <Quote title="Transmission optimisée">
-            Un système d'engrenages conçu pour minimiser les frictions,
-            réduisant ainsi les pertes d'énergie et améliorant la
-            synchronisation des pattes.
-          </Quote>
-          <div className="w-full md:w-[60%]">
+        <div className="flex w-full flex-col gap-y-8 md:flex-row md:items-center md:gap-x-10">
+          <div className="md:shrink-0 md:basis-[40%]">
+            <Quote title="Transmission optimisée">
+              Un système d'engrenages conçu pour minimiser les frictions,
+              réduisant ainsi les pertes d'énergie et améliorant la
+              synchronisation des pattes.
+            </Quote>
+          </div>
+
+          <div className="md:shrink-0 md:basis-[60%]">
             <Media
+              size="full"
               mediaItems={[
                 {
                   type: "video",

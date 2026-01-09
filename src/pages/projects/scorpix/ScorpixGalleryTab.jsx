@@ -6,6 +6,7 @@ export default function GalleryTab() {
   return (
     <div>
       <Media
+        layout="grid"
         mediaItems={[
           {
             type: "image",

@@ -1,6 +1,7 @@
 import Tabs from "@/components/projects/Tabs";
 import Tab from "@/components/projects/Tab";
 import PresentationTab from "@/pages/projects/scorpix/ScorpixPresentationTab";
+import PawMechanicsTab from "@/pages/projects/scorpix/ScorpixPawMechanicsTab";
 import GalleryTab from "@/pages/projects/scorpix/ScorpixGalleryTab";
 
 export default function Scorpix() {
@@ -9,6 +10,9 @@ export default function Scorpix() {
       <Tabs>
         <Tab title="Présentation">
           <PresentationTab />
+        </Tab>
+        <Tab title="Mécanique de la Patte">
+          <PawMechanicsTab />
         </Tab>
         <Tab title="Galerie">
           <GalleryTab />
