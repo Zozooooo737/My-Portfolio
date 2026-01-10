@@ -7,7 +7,7 @@ import { scorpixStruct } from "@/assets/ScorpixAssets";
 
 export default function ScorpixStructureTab() {
   return (
-    <div>
+    <div className="px-2 md:px-0">
       <Text spacing="md">
         La structure générale est la pièce support de tous les autres
         composants. Son rôle est de représenter l'hexapode à travers un corps

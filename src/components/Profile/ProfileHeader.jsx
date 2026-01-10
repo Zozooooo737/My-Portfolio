@@ -27,7 +27,7 @@ const ProfileHeader = () => {
               <p className="text-accent text-base font-semibold md:text-lg">
                 🎂 Âge
               </p>
-              <p className="text-base md:text-lg">20 ans</p>
+              <p className="text-base md:text-lg">21 ans</p>
             </div>
             <div>
               <p className="text-accent text-base font-semibold md:text-lg">

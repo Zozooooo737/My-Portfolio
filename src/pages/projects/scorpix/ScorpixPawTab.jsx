@@ -7,7 +7,7 @@ import { scorpixPaw } from "@/assets/ScorpixAssets";
 
 export default function ScorpixPawTab() {
   return (
-    <div>
+    <div className="px-2 md:px-0">
       <Text>
         La patte constitue l’élément de notre hexapode en contact direct avec le
         sol. Elle a pour rôle de transmettre le mouvement généré par la
