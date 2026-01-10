@@ -7,6 +7,7 @@ import Text from "@/components/ui/Text";
 import List from "@/components/ui/List";
 import Tag from "@/components/projects/Tag";
 import Quote from "@/components/ui/Quote";
+import NextTab from "@/components/projects/NextTab";
 
 export default function PresentationTab() {
   const allSkills = skillsData.flatMap((category) => category.skills);
@@ -466,6 +467,8 @@ export default function PresentationTab() {
           />
         </div>
       </div>
+
+      <NextTab to="/projects/scorpix/mechanic" label="Mécanique" />
     </div>
   );
 }

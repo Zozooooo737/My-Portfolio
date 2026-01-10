@@ -2,6 +2,7 @@ import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
 import Media from "@/components/ui/Media";
 import List from "@/components/ui/List";
+import NextTab from "@/components/projects/NextTab";
 
 import { MathJax } from "better-react-mathjax";
 
@@ -696,6 +697,8 @@ export default function ScorpixTransmissionTab() {
         Nous allons choisir cette solution pour réaliser notre prototype 2
         d'hexapode général.
       </Text>
+
+      <NextTab to="/projects/scorpix/paw" label="Patte" />
     </div>
   );
 }

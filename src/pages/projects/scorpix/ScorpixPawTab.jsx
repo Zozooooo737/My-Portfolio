@@ -1,6 +1,7 @@
 import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
 import Media from "@/components/ui/Media";
+import NextTab from "@/components/projects/NextTab";
 
 import { scorpixPaw } from "@/assets/ScorpixAssets";
 
@@ -8,8 +9,12 @@ export default function ScorpixPawTab() {
   return (
     <div>
       <Text>
-        La patte est l'élément de notre hexapode qui est en contact avec le sol.
-        Il a pour but de bouger afin de déplacer l'hexapode.
+        La patte constitue l’élément de notre hexapode en contact direct avec le
+        sol. Elle a pour rôle de transmettre le mouvement généré par la
+        mécanique, permettant ainsi de déplacer l'hexapode. Sa conception doit
+        garantir à la fois flexibilité et solidité pour supporter le poids de
+        l’hexapode, tout en assurant une démarche stable et efficace sur
+        différents types de surfaces.
       </Text>
 
       <Title size="2">
@@ -20,7 +25,7 @@ export default function ScorpixPawTab() {
       <Title size="3">Prototype 1</Title>
 
       <Text spacing="md">
-        Une patte a déjà été réalisé dans la partie Mécanique de Patte afin de
+        Une patte a déjà été réalisée dans la partie Mécanique de Patte afin de
         se rendre compte de son effet. La patte est simple et n'est pas
         techniquement complexe.
       </Text>
@@ -37,7 +42,7 @@ export default function ScorpixPawTab() {
       />
 
       <Text spacing="lg">
-        Cette patte n'est pas très complexe mais est suffisante pour la
+        Cette patte n'est pas très complexe, mais est suffisante pour la
         réalisation de notre hexapode 1.
       </Text>
 
@@ -71,7 +76,7 @@ export default function ScorpixPawTab() {
         Le fonctionnement est très simple et amovible. Le pied est pris en étaux
         entre les deux pattes et fixé par un axe pivot. Une autre pièce en forme
         de bague vient aussi compléter ce système afin de bloquer le pied.
-        Lorsque la bague est relevé, nous pouvons tourner le pied et changer sa
+        Lorsque la bague est relevée, nous pouvons tourner le pied et changer sa
         longueur et sa forme.
       </Text>
 
@@ -99,19 +104,22 @@ export default function ScorpixPawTab() {
 
       <Text spacing="md">
         <br />
-        Un coté est simple et arrondis et l'autre est plus long et crochus. Le
-        coté crochus pourra permettre d'avoir plus d'adhérence sur certaine
-        surface comme la moquette.
+        Un côté est simple et arrondi et l'autre est plus long et crochus. Le
+        coté crochus pourra permettre d'avoir plus d'adhérence sur certaines
+        surfaces comme la moquette.
       </Text>
 
       <Text spacing="md">
         Avec ce simple système, nous pouvons imaginer réaliser beaucoup de défis
-        bonus comme évoluer sur un plan incliné, ou sur certaine surface.
+        bonus comme évoluer sur un plan incliné, ou sur des surfaces moins
+        adhérentes.
       </Text>
 
       <Text spacing="xl">
-        Cette nouvelle patte sera utilisé pour le prototype 2 de l'hexapode.
+        Cette nouvelle patte sera utilisée pour le prototype 2 de l'hexapode.
       </Text>
+
+      <NextTab to="/projects/scorpix/structure" label="Structure" />
     </div>
   );
 }

@@ -9,10 +9,10 @@ export default function ScorpixStructureTab() {
   return (
     <div>
       <Text spacing="md">
-        La structure général est la pièce support de tous les autres composants.
-        Son rôle est de représenter l'hexapode à travers un corps centrale pour
-        supporter la transmission les moteurs et les piles ; et 6 pattes pour
-        accueillir leur mécanisme et la patte.
+        La structure générale est la pièce support de tous les autres
+        composants. Son rôle est de représenter l'hexapode à travers un corps
+        central pour supporter la transmission les moteurs et les piles ; et 6
+        pattes pour accueillir leur mécanisme et la patte.
       </Text>
 
       <Text>
@@ -50,11 +50,11 @@ export default function ScorpixStructureTab() {
       <Title size="3">Objectif de la structure</Title>
 
       <Text spacing="lg">
-        Nous voulons que notre structure contiennes les différentes parties de
+        Nous voulons que notre structure contienne les différentes parties de
         notre hexapode :
       </Text>
 
-      <List>La transmission composé d'un ensemble d'engrenages.</List>
+      <List>La transmission composée d'un ensemble d'engrenages.</List>
 
       <Media
         size="xs"
@@ -68,8 +68,8 @@ export default function ScorpixStructureTab() {
       />
 
       <List>
-        Les mécaniques des pattes composé de deux pièce : vilebrequin/bielle et
-        coulisseau/patte.
+        Les mécaniques des pattes composées de deux pièces : vilebrequin/bielle
+        et coulisseau/patte.
       </List>
 
       <Media
@@ -86,7 +86,7 @@ export default function ScorpixStructureTab() {
       <List>
         Les pattes sont fixées à l'extrémité des mécaniques des pattes. Ainsi,
         il n'y pas besoin de prévoir un espace sur la structure pour les fixer.
-        Mais, les pattes ont des degrés de libertés afin de pouvoir bouger, donc
+        Mais les pattes ont des degrés de liberté afin de pouvoir bouger, donc
         nous ne devons le prendre en compte.
       </List>
 
@@ -119,7 +119,7 @@ export default function ScorpixStructureTab() {
       />
 
       <List>
-        La batterie doit idéalement trouver sa place sur la structure mais son
+        La batterie doit idéalement trouver sa place sur la structure, mais son
         poids important aura une influence sur le centre de gravité de
         l'hexapode.
       </List>
@@ -137,9 +137,9 @@ export default function ScorpixStructureTab() {
 
       <Text>
         Notre objectif est aussi d'optimiser le poids de l'hexapode, et pour
-        cela nous avons opter pour la solution suivante : réaliser un châssis.
-        De plus, la disposition générale des pièces, nous conduis à réaliser
-        plusieurs étages raccorder par des tiges en bois.
+        cela, nous avons opté pour la solution suivante : réaliser un châssis.
+        De plus, la disposition générale des pièces, nous conduit à réaliser
+        plusieurs étages raccordés par des tiges en bois.
       </Text>
 
       <Title size="3">Disposition des composants</Title>
@@ -162,16 +162,16 @@ export default function ScorpixStructureTab() {
       <Title size="3">Comment fixer le moteur et la batterie ?</Title>
 
       <Text>
-        La première problématique que nous nous sommes posé et comment fixé le
+        La première problématique que nous nous sommes posée et comment fixer le
         moteur sur la structure générale. En effet, ce dernier doit rester en
-        place afin de pouvoir délivré continuellement un moment à la chaine de
+        place afin de pouvoir délivrer continuellement un moment à la chaîne de
         transmission.
       </Text>
 
       <Text>
         Dans un premier temps, nous avons remarqué que le moteur ne pouvait se
-        trouver entre la base inférieur et supérieur en raison de sa hauteur
-        importante. Nous avons donc, imaginer une boite dans lequel nous
+        trouver entre la base inférieure et supérieure en raison de sa hauteur
+        importante. Nous avons donc, imaginer une boite dans laquelle nous
         pourront le caler pour que ce dernier puisse être raccordé à la
         structure.
       </Text>
@@ -271,10 +271,10 @@ export default function ScorpixStructureTab() {
         <List>
           <b>(Transmission)</b> La chaîne de transmission s’est cassée
           lorsqu’une résistance s’est opposée au fonctionnement des pattes,
-          provoquant la rupture de dents d’engrenages.
+          provoquant la rupture de dents d’engrenage.
         </List>
         <List>
-          <b>(Mécanique de la patte)</b> La liaison vilebrequin / engrenage
+          <b>(Mécanique de la patte)</b> La liaison [vilebrequin, engrenage]
           s’est brisée lors du fonctionnement normal de l’hexapode.
         </List>
         <List>
@@ -340,9 +340,9 @@ export default function ScorpixStructureTab() {
 
       <Text spacing="lg">
         <br />
-        Ce premier prototype nous apportés beaucoup de choses à corriger et
+        Ce premier prototype nous a apporté beaucoup de choses à corriger et
         d'axes d'améliorations. Nous devons maintenant revenir sur les
-        composants et produire de nouveaux sous prototypes afin de pouvoir
+        composants et produire de nouveaux sous-prototypes afin de pouvoir
         réaliser un nouveau prototype d'hexapode.
       </Text>
 
@@ -379,8 +379,8 @@ export default function ScorpixStructureTab() {
       <Text spacing="md">
         Ce prototype a reçu beaucoup de changement comparé au prototype 1. Nous
         avons amélioré la transmission, les mécaniques de pattes et les pattes.
-        De plus, nous avons pu positionné la batterie sous la transmission. Nous
-        pouvons aussi relevé que cette hexapode est facilement montable et
+        De plus, nous avons pu positionner la batterie sous la transmission.
+        Nous pouvons aussi relevé que cet hexapode est facilement montable et
         démontable.
       </Text>
 
@@ -418,7 +418,7 @@ export default function ScorpixStructureTab() {
         l’hexapode est bien rectiligne. En revanche, nous avons identifié un
         point de fragilité majeur sur ce nouveau prototype : l’engrenage moteur.
         En effet, lorsque l’hexapode commence à marcher, il cesse très
-        rapidement de fonctionner, car la liaison moteur / engrenage se brise.
+        rapidement de fonctionner, car la liaison [moteur, engrenage] se brise.
       </Text>
 
       <Text spacing="md">
@@ -433,11 +433,11 @@ export default function ScorpixStructureTab() {
 
       <ul className="pb-6">
         <List>
-          <b>(Structure générale)</b> Frottements importants entre la
+          <b>(Structure général)</b> Frottements importants entre la
           transmission et la structure générale.
         </List>
         <List>
-          <b>(Structure générale)</b> Présence de nombreuses frictions dans le
+          <b>(Structure général)</b> Présence de nombreuses frictions dans le
           mécanisme lors du fonctionnement.
         </List>
       </ul>
@@ -458,7 +458,7 @@ export default function ScorpixStructureTab() {
       <ul className="pb-6">
         <List>
           Arrondir le bord supérieur des vilebrequins afin de faciliter leur
-          montage et leur démontage.a
+          montage et leur démontage.,
         </List>
       </ul>
 
@@ -474,9 +474,9 @@ export default function ScorpixStructureTab() {
 
       <Text>
         Le prototype 3 a pour mission d'être fonctionnelle et pour cela, nous
-        devons régler un problème majeur : les frottements. Pour cela nous avons
-        apporté quelques modifications sur la structure générale et sur la façon
-        dont il faut le monter.
+        devons régler un problème majeur : les frottements. Pour cela, nous
+        avons apporté quelques modifications sur la structure générale et sur la
+        façon dont il faut le monter.
       </Text>
 
       <Media

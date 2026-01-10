@@ -2,6 +2,7 @@ import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
 import Media from "@/components/ui/Media";
 import List from "@/components/ui/List";
+import NextTab from "@/components/projects/NextTab";
 
 import { scorpixMecha } from "@/assets/ScorpixAssets";
 
@@ -284,8 +285,8 @@ export default function ScorpixPawMechanicsTab() {
 
       <Text spacing="lg">
         Nous pouvons observer sur ce schéma la raison qui empêche le
-        fonctionnement du prototype 2. le cercle que décrit la bielle (B) ne
-        croise jamais le cercle que décrit la patte (P). Ainsi pour résoudre ce
+        fonctionnement du prototype 2. Le cercle que décrit la bielle (B) ne
+        croise jamais le cercle que décrit la patte (P). Ainsi, pour résoudre ce
         problème, nous devons déterminer les conditions qui relient ces deux
         cercles pour que la patte soit fonctionnelle.
       </Text>
@@ -708,7 +709,7 @@ export default function ScorpixPawMechanicsTab() {
       <Text spacing="lg">
         Pour réaliser ce prototype, nous avons réalisé le même travail qu’avec
         le prototype précédent, nous avons réalisé une séance de calibrage. Nous
-        avons désormais 2 versions finalisés de notre mécanique de patte.
+        avons désormais 2 versions finalisées de notre mécanique de patte.
       </Text>
 
       <Title>Prototype 8</Title>
@@ -727,14 +728,14 @@ export default function ScorpixPawMechanicsTab() {
           normal de l'hexapode.
         </List>
         <List>
-          La tige supérieur du vilebrequin être trop longue et empêche la
-          structure supérieur de se placer correctement.
+          La tige supérieure du vilebrequin être trop longue et empêche la
+          structure supérieure de se placer correctement.
         </List>
         <List>
-          Lors du fonctionnement certains manetons des mécaniques de pattes se
+          Lors du fonctionnement, certains manetons des mécaniques de pattes se
           cognent entre eux.
         </List>
-        <List>Lors du transport du prototype, une bielle s'est brisé.</List>
+        <List>Lors du transport du prototype, une bielle s'est brisée.</List>
       </ul>
 
       <Title size="2">Solutions apportées</Title>
@@ -744,7 +745,7 @@ export default function ScorpixPawMechanicsTab() {
           Modéliser un vilebrequin avec une tige plus épaisse et rectangulaire.
         </List>
         <List>
-          Mesurer la hauteur entre la base intermédiaire et la base supérieur,
+          Mesurer la hauteur entre la base intermédiaire et la base supérieure,
           pour ajuster la hauteur du vilebrequin.
         </List>
         <List>
@@ -783,6 +784,8 @@ export default function ScorpixPawMechanicsTab() {
         Ces nouvelles pièces seront utilisées pour réaliser le prototype 2 de
         l'hexapode.
       </Text>
+
+      <NextTab to="/projects/scorpix/transmission" label="Transmission" />
     </div>
   );
 }
