@@ -19,107 +19,111 @@ export default function PresentationTab() {
 
   return (
     <div className="px-2 md:px-0">
-      {/* Section Scorpix - Mobile First (en haut sur mobile) */}
-      <div className="mb-6 block md:hidden">
-        <div className="border-primary flex h-full w-full flex-col gap-y-2 border-2 p-2 text-center">
-          <h1 className="bg-primary w-full py-2 text-3xl font-bold">Scorpix</h1>
-          <Media
-            mediaItems={[
-              {
-                type: "image",
-                src: scorpixImages.portrait1,
-                alt: "Photo du Scorpix",
-              },
-              {
-                type: "image",
-                src: scorpixImages.portrait2,
-                alt: "Photo du Scorpix 2",
-              },
-              {
-                type: "image",
-                src: scorpixImages.fang,
-                alt: "Scorpix - Pince",
-              },
-              {
-                type: "image",
-                src: scorpixImages.paw,
-                alt: "Scorpix - Patte",
-              },
-              {
-                type: "image",
-                src: scorpixImages.tail,
-                alt: "Scorpix - Queue",
-              },
-            ]}
-          />
-          <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
-          <div className="space-y-2 px-2">
-            <div className="flex items-center">
-              <img
-                src={logos.group}
-                className="bg-primary w-6 rounded-md p-1"
-              />
-              <p className="ml-3 text-lg">Projet de groupe (5)</p>
+      <div className="flex flex-col md:flex-row md:gap-x-4">
+        <div className="mb-6 w-full p-3 md:order-2 md:mb-0 md:w-[30%]">
+          <div className="border-primary flex h-full w-full flex-col gap-y-2 border-2 p-2 text-center">
+            <h1 className="bg-primary w-full py-2 text-3xl font-bold">
+              Scorpix
+            </h1>
+            <Media
+              mediaItems={[
+                {
+                  type: "image",
+                  src: scorpixImages.portrait1,
+                  alt: "Photo du Scorpix",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.portrait2,
+                  alt: "Photo du Scorpix 2",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.fang,
+                  alt: "Scorpix - Pince",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.paw,
+                  alt: "Scorpix - Patte",
+                },
+                {
+                  type: "image",
+                  src: scorpixImages.tail,
+                  alt: "Scorpix - Queue",
+                },
+              ]}
+            />
+            <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
+            <div className="space-y-2 px-2">
+              <div className="flex items-center">
+                <img
+                  src={logos.group}
+                  className="bg-primary w-6 rounded-md p-1"
+                />
+                <p className="ml-3 text-lg">Projet de groupe (5)</p>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src={logos.date}
+                  className="bg-primary w-6 rounded-md p-1"
+                />
+                <p className="ml-3 text-lg">Juin 2024</p>
+              </div>
+              <div className="flex items-center">
+                <img
+                  src={logos.duration}
+                  className="bg-primary w-6 rounded-md p-1"
+                />
+                <p className="ml-3 text-lg">8 mois</p>
+              </div>
             </div>
-            <div className="flex items-center">
-              <img src={logos.date} className="bg-primary w-6 rounded-md p-1" />
-              <p className="ml-3 text-lg">Juin 2024</p>
+            <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
+            <div className="flex flex-wrap justify-center gap-2">
+              {projectSkills.slice(0, maxTags).map((skill) => (
+                <Tag
+                  key={skill.id}
+                  name={skill.name}
+                  logo={skill.logo}
+                  color={skill.color}
+                  isTextMode={true}
+                />
+              ))}
             </div>
-            <div className="flex items-center">
-              <img
-                src={logos.duration}
-                className="bg-primary w-6 rounded-md p-1"
-              />
-              <p className="ml-3 text-lg">8 mois</p>
-            </div>
-          </div>
-          <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
-          <div className="flex flex-wrap justify-center gap-2">
-            {projectSkills.slice(0, maxTags).map((skill) => (
-              <Tag
-                key={skill.id}
-                name={skill.name}
-                logo={skill.logo}
-                color={skill.color}
-                isTextMode={true}
-              />
-            ))}
           </div>
         </div>
-      </div>
 
-      {/* Contenu principal */}
-      <div className="md:space-x- flex flex-col md:flex-row md:space-y-0">
-        {/* Section Texte */}
-        <div className="w-full md:w-[70%]">
-          <Text>
-            Nous avons réalisé ce projet dans le cadre du Projet Ingénieur
-            eXploration en première année d'ESILV, <b>PIX 1</b>. Notre objectif
-            était de réaliser un <b>hexapode mécanique</b> capable de se
-            déplacer de façon rectiligne. Nous devions réaliser l'hexapode de A
-            à Z sachant que deux moteurs et une batterie nous ont été fournis.
-            Par la suite, nous pouvions envisager des fonctionnalités
-            supplémentaires comme transporter une charge. Notre réflexion
-            gravitait autour de 3 mots : <b>Démontable</b>, <b>Modulable</b> et{" "}
-            <b>Polyvalent</b>.
-          </Text>
+        <div>
+          <div>
+            <Text>
+              Nous avons réalisé ce projet dans le cadre du Projet Ingénieur
+              eXploration en première année d'ESILV, <b>PIX 1</b>. Notre
+              objectif était de réaliser un <b>hexapode mécanique</b> capable de
+              se déplacer de façon rectiligne. Nous devions réaliser l'hexapode
+              de A à Z sachant que deux moteurs et une batterie nous ont été
+              fournis. Par la suite, nous pouvions envisager des fonctionnalités
+              supplémentaires comme transporter une charge. Notre réflexion
+              gravitait autour de 3 mots : <b>Démontable</b>, <b>Modulable</b>{" "}
+              et <b>Polyvalent</b>.
+            </Text>
 
-          <Title>Déroulement du Projet</Title>
+            <Title>Déroulement du Projet</Title>
 
-          <Title size={2}>1. Lancement et définition du projet</Title>
-          <ul>
-            <List>
-              <b>Date de commencement :</b> Septembre 2023
-            </List>
-            <List>
-              <b>Présentation du projet :</b> Introduction aux contraintes et
-              objectifs.
-            </List>
-            <List>
-              <b>Analyse Fonctionnelle du Besoin (AFB) :</b> Identification des
-              fonctions principales et contraintes techniques.
-            </List>
-          </ul>
+            <Title size={2}>1. Lancement et définition du projet</Title>
+            <ul>
+              <List>
+                <b>Date de commencement :</b> Septembre 2023
+              </List>
+              <List>
+                <b>Présentation du projet :</b> Introduction aux contraintes et
+                objectifs.
+              </List>
+              <List>
+                <b>Analyse Fonctionnelle du Besoin (AFB) :</b> Identification
+                des fonctions principales et contraintes techniques.
+              </List>
+            </ul>
+          </div>
 
           <Title size={2}>2. État de l'Art et Exploration des Solutions</Title>
           <ul>
@@ -164,80 +168,6 @@ export default function PresentationTab() {
               confrontation aux autres projets.
             </List>
           </ul>
-        </div>
-
-        {/* Section Scorpix - Version Desktop (à droite) */}
-        <div className="hidden md:block md:w-[30%]">
-          <div className="border-primary flex flex-col gap-y-2 border-2 p-2 text-center">
-            <h1 className="bg-primary w-full py-2 text-4xl font-bold">
-              Scorpix
-            </h1>
-            <Media
-              mediaItems={[
-                {
-                  type: "image",
-                  src: scorpixImages.portrait1,
-                  alt: "Photo du Scorpix",
-                },
-                {
-                  type: "image",
-                  src: scorpixImages.portrait2,
-                  alt: "Photo du Scorpix 2",
-                },
-                {
-                  type: "image",
-                  src: scorpixImages.fang,
-                  alt: "Scorpix - Pince",
-                },
-                {
-                  type: "image",
-                  src: scorpixImages.paw,
-                  alt: "Scorpix - Patte",
-                },
-                {
-                  type: "image",
-                  src: scorpixImages.tail,
-                  alt: "Scorpix - Queue",
-                },
-              ]}
-            />
-            <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
-            <div className="space-y-2 px-5">
-              <div className="flex items-center">
-                <img
-                  src={logos.group}
-                  className="bg-primary w-8 rounded-md p-1"
-                />
-                <p className="ml-4 text-xl">Projet de groupe (5)</p>
-              </div>
-              <div className="flex items-center">
-                <img
-                  src={logos.date}
-                  className="bg-primary w-8 rounded-md p-1"
-                />
-                <p className="ml-4 text-xl">Juin 2024</p>
-              </div>
-              <div className="flex items-center">
-                <img
-                  src={logos.duration}
-                  className="bg-primary w-8 rounded-md p-1"
-                />
-                <p className="ml-4 text-xl">8 mois</p>
-              </div>
-            </div>
-            <hr className="bg-primary mx-0.5 my-2 h-0.5 border-0" />
-            <div className="flex flex-wrap justify-center gap-2">
-              {projectSkills.slice(0, maxTags).map((skill) => (
-                <Tag
-                  key={skill.id}
-                  name={skill.name}
-                  logo={skill.logo}
-                  color={skill.color}
-                  isTextMode={true}
-                />
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 

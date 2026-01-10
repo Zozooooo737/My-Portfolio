@@ -21,32 +21,32 @@ import ScorpixVideoClimbing from "@/assets/projects/scorpix/scorpix-video-climbi
 import ScorpixVideoWithout from "@/assets/projects/scorpix/scorpix-video-without.mp4";
 import ScorpixVideoExtended from "@/assets/projects/scorpix/scorpix-video-extended.mp4";
 
-import ScorpixPawSchema1 from "@/assets/projects/scorpix/scorpix-paw-schema-1.png";
-import ScorpixPawSchema2 from "@/assets/projects/scorpix/scorpix-paw-schema-2.png";
-import ScorpixPawSchema3 from "@/assets/projects/scorpix/scorpix-paw-schema-3.png";
-import ScorpixPawSchema4 from "@/assets/projects/scorpix/scorpix-paw-schema-4.png";
-import ScorpixPawSchema5 from "@/assets/projects/scorpix/scorpix-paw-schema-5.png";
-import ScorpixPawSchema6 from "@/assets/projects/scorpix/scorpix-paw-schema-6.png";
-import ScorpixPawSchema7 from "@/assets/projects/scorpix/scorpix-paw-schema-7.png";
-import ScorpixPawMode1 from "@/assets/projects/scorpix/scorpix-paw-mode-1.png";
-import ScorpixPawMode2 from "@/assets/projects/scorpix/scorpix-paw-mode-2.png";
-import ScorpixPawMode3 from "@/assets/projects/scorpix/scorpix-paw-mode-3.png";
-import ScorpixPawMode4 from "@/assets/projects/scorpix/scorpix-paw-mode-4.png";
-import ScorpixPawMode5 from "@/assets/projects/scorpix/scorpix-paw-mode-5.png";
-import ScorpixPawMode6 from "@/assets/projects/scorpix/scorpix-paw-mode-6.png";
-import ScorpixPawMode7 from "@/assets/projects/scorpix/scorpix-paw-mode-7.png";
-import ScorpixPawProto1 from "@/assets/projects/scorpix/scorpix-paw-proto-1.png";
-import ScorpixPawProto2 from "@/assets/projects/scorpix/scorpix-paw-proto-2.jpg";
-import ScorpixPawProto3 from "@/assets/projects/scorpix/scorpix-paw-proto-3.png";
-import ScorpixPawProto4 from "@/assets/projects/scorpix/scorpix-paw-proto-4.png";
-import ScorpixPawProto5 from "@/assets/projects/scorpix/scorpix-paw-proto-5.png";
-import ScorpixPawProto6 from "@/assets/projects/scorpix/scorpix-paw-proto-6.png";
-import ScorpixPawProto7 from "@/assets/projects/scorpix/scorpix-paw-proto-7.png";
-import ScorpixPawProblem1 from "@/assets/projects/scorpix/scorpix-paw-problem-1.png";
-import ScorpixPawProblem2 from "@/assets/projects/scorpix/scorpix-paw-problem-2.png";
-import ScorpixPawProblem3 from "@/assets/projects/scorpix/scorpix-paw-problem-3.png";
-import ScorpixPawProblem4 from "@/assets/projects/scorpix/scorpix-paw-problem-4.png";
-import ScorpixPawProblem5 from "@/assets/projects/scorpix/scorpix-paw-problem-5.png";
+import ScorpixMechaSchema1 from "@/assets/projects/scorpix/scorpix-mecha-schema-1.png";
+import ScorpixMechaSchema2 from "@/assets/projects/scorpix/scorpix-mecha-schema-2.png";
+import ScorpixMechaSchema3 from "@/assets/projects/scorpix/scorpix-mecha-schema-3.png";
+import ScorpixMechaSchema4 from "@/assets/projects/scorpix/scorpix-mecha-schema-4.png";
+import ScorpixMechaSchema5 from "@/assets/projects/scorpix/scorpix-mecha-schema-5.png";
+import ScorpixMechaSchema6 from "@/assets/projects/scorpix/scorpix-mecha-schema-6.png";
+import ScorpixMechaSchema7 from "@/assets/projects/scorpix/scorpix-mecha-schema-7.png";
+import ScorpixMechaMode1 from "@/assets/projects/scorpix/scorpix-mecha-mode-1.png";
+import ScorpixMechaMode2 from "@/assets/projects/scorpix/scorpix-mecha-mode-2.png";
+import ScorpixMechaMode3 from "@/assets/projects/scorpix/scorpix-mecha-mode-3.png";
+import ScorpixMechaMode4 from "@/assets/projects/scorpix/scorpix-mecha-mode-4.png";
+import ScorpixMechaMode5 from "@/assets/projects/scorpix/scorpix-mecha-mode-5.png";
+import ScorpixMechaMode6 from "@/assets/projects/scorpix/scorpix-mecha-mode-6.png";
+import ScorpixMechaMode7 from "@/assets/projects/scorpix/scorpix-mecha-mode-7.png";
+import ScorpixMechaProto1 from "@/assets/projects/scorpix/scorpix-mecha-proto-1.png";
+import ScorpixMechaProto2 from "@/assets/projects/scorpix/scorpix-mecha-proto-2.jpg";
+import ScorpixMechaProto3 from "@/assets/projects/scorpix/scorpix-mecha-proto-3.png";
+import ScorpixMechaProto4 from "@/assets/projects/scorpix/scorpix-mecha-proto-4.png";
+import ScorpixMechaProto5 from "@/assets/projects/scorpix/scorpix-mecha-proto-5.png";
+import ScorpixMechaProto6 from "@/assets/projects/scorpix/scorpix-mecha-proto-6.png";
+import ScorpixMechaProto7 from "@/assets/projects/scorpix/scorpix-mecha-proto-7.png";
+import ScorpixMechaProblem1 from "@/assets/projects/scorpix/scorpix-mecha-problem-1.png";
+import ScorpixMechaProblem2 from "@/assets/projects/scorpix/scorpix-mecha-problem-2.png";
+import ScorpixMechaProblem3 from "@/assets/projects/scorpix/scorpix-mecha-problem-3.png";
+import ScorpixMechaProblem4 from "@/assets/projects/scorpix/scorpix-mecha-problem-4.png";
+import ScorpixMechaProblem5 from "@/assets/projects/scorpix/scorpix-mecha-problem-5.png";
 
 import ScorpixTransmiImage1 from "@/assets/projects/scorpix/scorpix-transmi-image-1.png";
 import ScorpixTransmiImage2 from "@/assets/projects/scorpix/scorpix-transmi-image-2.png";
@@ -61,6 +61,13 @@ import ScorpixTransmiMode1 from "@/assets/projects/scorpix/scorpix-transmi-mode-
 import ScorpixTransmiMode2 from "@/assets/projects/scorpix/scorpix-transmi-mode-2.png";
 import ScorpixTransmiProto1 from "@/assets/projects/scorpix/scorpix-transmi-proto-1.png";
 import ScorpixTransmiProto2 from "@/assets/projects/scorpix/scorpix-transmi-proto-2.png";
+
+import ScorpixPawMode2_1 from "@/assets/projects/scorpix/scorpix-paw-mode-2-1.png";
+import ScorpixPawMode2_2 from "@/assets/projects/scorpix/scorpix-paw-mode-2-2.png";
+import ScorpixPawProto1 from "@/assets/projects/scorpix/scorpix-paw-proto-1.png";
+import ScorpixPawProto2_1 from "@/assets/projects/scorpix/scorpix-paw-proto-2-1.png";
+import ScorpixPawProto2_2 from "@/assets/projects/scorpix/scorpix-paw-proto-2-2.png";
+import ScorpixPawProto2_3 from "@/assets/projects/scorpix/scorpix-paw-proto-2-3.png";
 
 export const scorpixImages = {
   portrait1: ScorpixPortrait1,
@@ -89,33 +96,33 @@ export const scorpixVideos = {
   extended: ScorpixVideoExtended,
 };
 
-export const scorpixPaw = {
-  schema1: ScorpixPawSchema1,
-  schema2: ScorpixPawSchema2,
-  schema3: ScorpixPawSchema3,
-  schema4: ScorpixPawSchema4,
-  schema5: ScorpixPawSchema5,
-  schema6: ScorpixPawSchema6,
-  schema7: ScorpixPawSchema7,
-  mode1: ScorpixPawMode1,
-  mode2: ScorpixPawMode2,
-  mode3: ScorpixPawMode3,
-  mode4: ScorpixPawMode4,
-  mode5: ScorpixPawMode5,
-  mode6: ScorpixPawMode6,
-  mode7: ScorpixPawMode7,
-  proto1: ScorpixPawProto1,
-  proto2: ScorpixPawProto2,
-  proto3: ScorpixPawProto3,
-  proto4: ScorpixPawProto4,
-  proto5: ScorpixPawProto5,
-  proto6: ScorpixPawProto6,
-  proto7: ScorpixPawProto7,
-  problem1: ScorpixPawProblem1,
-  problem2: ScorpixPawProblem2,
-  problem3: ScorpixPawProblem3,
-  problem4: ScorpixPawProblem4,
-  problem5: ScorpixPawProblem5,
+export const scorpixMecha = {
+  schema1: ScorpixMechaSchema1,
+  schema2: ScorpixMechaSchema2,
+  schema3: ScorpixMechaSchema3,
+  schema4: ScorpixMechaSchema4,
+  schema5: ScorpixMechaSchema5,
+  schema6: ScorpixMechaSchema6,
+  schema7: ScorpixMechaSchema7,
+  mode1: ScorpixMechaMode1,
+  mode2: ScorpixMechaMode2,
+  mode3: ScorpixMechaMode3,
+  mode4: ScorpixMechaMode4,
+  mode5: ScorpixMechaMode5,
+  mode6: ScorpixMechaMode6,
+  mode7: ScorpixMechaMode7,
+  proto1: ScorpixMechaProto1,
+  proto2: ScorpixMechaProto2,
+  proto3: ScorpixMechaProto3,
+  proto4: ScorpixMechaProto4,
+  proto5: ScorpixMechaProto5,
+  proto6: ScorpixMechaProto6,
+  proto7: ScorpixMechaProto7,
+  problem1: ScorpixMechaProblem1,
+  problem2: ScorpixMechaProblem2,
+  problem3: ScorpixMechaProblem3,
+  problem4: ScorpixMechaProblem4,
+  problem5: ScorpixMechaProblem5,
 };
 
 export const scorpixTransmi = {
@@ -132,4 +139,13 @@ export const scorpixTransmi = {
   mode2: ScorpixTransmiMode2,
   proto1: ScorpixTransmiProto1,
   proto2: ScorpixTransmiProto2,
+};
+
+export const scorpixPaw = {
+  mode2_1: ScorpixPawMode2_1,
+  mode2_2: ScorpixPawMode2_2,
+  proto1: ScorpixPawProto1,
+  proto2_1: ScorpixPawProto2_1,
+  proto2_2: ScorpixPawProto2_2,
+  proto2_3: ScorpixPawProto2_3,
 };

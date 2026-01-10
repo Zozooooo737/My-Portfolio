@@ -5,8 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-/* ---------- SIZE (NO CROP) ---------- */
-
 const SIZE_WRAPPER = {
   full: "w-full",
   lg: "max-w-6xl mx-auto px-4",
@@ -15,34 +13,42 @@ const SIZE_WRAPPER = {
   xs: "max-w-xl mx-auto px-6",
 };
 
-/* ---------- GRID AUTO ---------- */
+const GRID_WIDTH = {
+  full: "w-full",
+  lg: "max-w-6xl mx-auto",
+  md: "max-w-4xl mx-auto",
+  sm: "max-w-2xl mx-auto",
+  xs: "max-w-xl mx-auto",
+};
 
-const AutoGrid = ({ mediaItems, onClick }) => {
+const AutoGrid = ({ mediaItems, onClick, size }) => {
   const count = mediaItems.length;
 
   const gridCols =
     count <= 2
       ? "grid-cols-2"
-      : count <= 4
-        ? "grid-cols-2"
-        : "grid-cols-2 md:grid-cols-3";
+      : count <= 3
+        ? "grid-cols-3"
+        : count <= 4
+          ? "grid-cols-2"
+          : "grid-cols-2 md:grid-cols-3";
 
   return (
-    <div className={`grid ${gridCols} gap-4`}>
+    <div className={`grid ${gridCols} auto-rows-fr gap-4 ${GRID_WIDTH[size]}`}>
       {mediaItems.map((media, index) => (
         <div
           key={index}
           onClick={() => onClick(index)}
-          className="flex cursor-pointer items-center justify-center rounded-lg bg-black/5 p-2"
+          className="relative cursor-pointer overflow-hidden rounded-lg bg-black/5"
         >
           {media.type === "image" ? (
             <img
               src={media.src}
               alt={media.alt}
-              className="max-h-64 w-auto object-contain"
+              className="h-full w-full object-contain"
             />
           ) : (
-            <video muted loop className="max-h-64 w-auto object-contain">
+            <video muted loop className="h-full w-full object-contain">
               <source src={media.src} type="video/mp4" />
             </video>
           )}
@@ -71,7 +77,11 @@ const Media = ({ mediaItems, size = "full", layout = "carousel" }) => {
     <>
       <div className={SIZE_WRAPPER[size]}>
         {layout === "grid" ? (
-          <AutoGrid mediaItems={mediaItems} onClick={openFullscreen} />
+          <AutoGrid
+            mediaItems={mediaItems}
+            onClick={openFullscreen}
+            size={size}
+          />
         ) : (
           <Swiper
             modules={[Navigation, Pagination]}
@@ -88,7 +98,7 @@ const Media = ({ mediaItems, size = "full", layout = "carousel" }) => {
                     <img
                       src={media.src}
                       alt={media.alt}
-                      className="max-h-[60vh] w-auto object-contain"
+                      className="max-h-[60vh] w-full rounded-lg object-contain"
                     />
                   ) : (
                     <video

@@ -3,7 +3,7 @@ import Text from "@/components/ui/Text";
 import Media from "@/components/ui/Media";
 import List from "@/components/ui/List";
 
-import { scorpixPaw } from "@/assets/ScorpixAssets";
+import { scorpixMecha } from "@/assets/ScorpixAssets";
 
 export default function ScorpixPawMechanicsTab() {
   return (
@@ -49,7 +49,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.schema1,
+            src: scorpixMecha.schema1,
             alt: "Schéma du mouvement d'une patte",
           },
         ]}
@@ -69,7 +69,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.schema2,
+            src: scorpixMecha.schema2,
             alt: "Schéma illustrant le mouvement réalisé par le mécanisme",
           },
         ]}
@@ -86,7 +86,11 @@ export default function ScorpixPawMechanicsTab() {
       <Media
         size="sm"
         mediaItems={[
-          { type: "image", src: scorpixPaw.schema3, alt: "Schéma cinématique" },
+          {
+            type: "image",
+            src: scorpixMecha.schema3,
+            alt: "Schéma cinématique",
+          },
         ]}
       />
 
@@ -103,7 +107,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.schema4,
+            src: scorpixMecha.schema4,
             alt: "Schéma du mouvement de la bielle (Vue de haut)",
           },
         ]}
@@ -122,7 +126,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.schema5,
+            src: scorpixMecha.schema5,
             alt: "Tableau des étapes du mécanisme",
           },
         ]}
@@ -142,7 +146,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.schema6,
+            src: scorpixMecha.schema6,
             alt: "Formules mathématiques",
           },
         ]}
@@ -163,7 +167,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.mode1,
+            src: scorpixMecha.mode1,
             alt: "Modélisation Sharp3D – Prototype 1",
           },
         ]}
@@ -174,7 +178,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.proto1,
+            src: scorpixMecha.proto1,
             alt: "Prototype 1 - Découpé le 10 janvier 2024",
           },
         ]}
@@ -238,7 +242,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.problem1,
+            src: scorpixMecha.problem1,
             alt: "Schéma illustrant le problème de la bielle",
           },
         ]}
@@ -255,7 +259,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.problem2,
+            src: scorpixMecha.problem2,
             alt: "Schéma illustrant le problème de la bielle et de la patte",
           },
         ]}
@@ -272,7 +276,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.schema7,
+            src: scorpixMecha.schema7,
             alt: "Calculs mathématiques",
           },
         ]}
@@ -300,7 +304,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.mode2,
+            src: scorpixMecha.mode2,
             alt: "Modélisation Sharp3D – Prototype 2",
           },
         ]}
@@ -311,7 +315,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.proto2,
+            src: scorpixMecha.proto2,
             alt: "Prototype 2 - Découpé le 18 janvier 2024",
           },
         ]}
@@ -377,7 +381,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.problem3,
+            src: scorpixMecha.problem3,
             alt: "Schéma illustrant le problème de collision de la bielle",
           },
         ]}
@@ -406,7 +410,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.mode3,
+            src: scorpixMecha.mode3,
             alt: "Modélisation Sharp3D - Prototype 3",
           },
         ]}
@@ -417,7 +421,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.proto3,
+            src: scorpixMecha.proto3,
             alt: "Prototype 3 - Découpé le 9 février 2024",
           },
         ]}
@@ -471,7 +475,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.mode4,
+            src: scorpixMecha.mode4,
             alt: "Modélisation Sharp3D - Prototype 4",
           },
         ]}
@@ -482,7 +486,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.proto4,
+            src: scorpixMecha.proto4,
             alt: "Prototype 4 - Découpé le 15 février 2024",
           },
         ]}
@@ -545,7 +549,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.mode5,
+            src: scorpixMecha.mode5,
             alt: "Modélisation Sharp3D - Prototype 5",
           },
         ]}
@@ -556,7 +560,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.proto5,
+            src: scorpixMecha.proto5,
             alt: "Prototype 5 - Découpé le 23 février 2024",
           },
         ]}
@@ -616,7 +620,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.mode6,
+            src: scorpixMecha.mode6,
             alt: "Modélisation Sharp3D - Prototype 6",
           },
         ]}
@@ -627,7 +631,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.proto6,
+            src: scorpixMecha.proto6,
             alt: "Prototype 6 - Découpé le 9 mars 2024",
           },
         ]}
@@ -684,7 +688,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.mode7,
+            src: scorpixMecha.mode7,
             alt: "Modélisation Sharp3D - Prototype 7",
           },
         ]}
@@ -695,7 +699,7 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.proto7,
+            src: scorpixMecha.proto7,
             alt: "Prototype 7 - Découpé le 9 mars 2024",
           },
         ]}
@@ -754,12 +758,12 @@ export default function ScorpixPawMechanicsTab() {
         mediaItems={[
           {
             type: "image",
-            src: scorpixPaw.problem4,
+            src: scorpixMecha.problem4,
             alt: "Prototype 8 – Améliorations du vilebrequin",
           },
           {
             type: "image",
-            src: scorpixPaw.problem5,
+            src: scorpixMecha.problem5,
             alt: "Prototype 8 – Améliorations du maneton",
           },
         ]}
