@@ -4,7 +4,7 @@ import PresentationTab from "@/pages/projects/scorpix/ScorpixPresentationTab";
 import PawMechanicsTab from "@/pages/projects/scorpix/ScorpixPawMechanicsTab";
 import TransmissionTab from "@/pages/projects/scorpix/ScorpixTransmissionTab";
 import PawTab from "@/pages/projects/scorpix/ScorpixPawTab";
-import GalleryTab from "@/pages/projects/scorpix/ScorpixGalleryTab";
+import StructureTab from "@/pages/projects/scorpix/ScorpixStructureTab";
 
 export default function Scorpix() {
   return (
@@ -13,7 +13,7 @@ export default function Scorpix() {
         <Tab title="Présentation">
           <PresentationTab />
         </Tab>
-        <Tab title="Mécanique de la Patte">
+        <Tab title="Mécanique">
           <PawMechanicsTab />
         </Tab>
         <Tab title="Transmission">
@@ -22,8 +22,8 @@ export default function Scorpix() {
         <Tab title="Patte">
           <PawTab />
         </Tab>
-        <Tab title="Galerie">
-          <GalleryTab />
+        <Tab title="Structure">
+          <StructureTab />
         </Tab>
       </Tabs>
     </div>

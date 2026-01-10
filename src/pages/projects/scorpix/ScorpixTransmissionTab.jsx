@@ -10,33 +10,43 @@ import { scorpixTransmi } from "@/assets/ScorpixAssets";
 export default function ScorpixTransmissionTab() {
   return (
     <div className="px-2 md:px-0">
-      <Text spacing="sm">
+      <Text spacing="md">
         La transmission a pour rôle de transformer le couple et le mouvement
         généré par le moteur afin de faire fonctionner le mécanisme des pattes.
         Le système doit réaliser une réduction de sa vitesse de rotation. Pour
         répondre à cela, nous réaliserons une chaîne d'engrenage.
       </Text>
-      <Text>La chaîne d'engrenage doit être simple et fiable.</Text>
+
+      <Text spacing="md">
+        La chaîne d'engrenage doit être simple et fiable.
+      </Text>
+
       <Title size={2}>
         Objectif : Réaliser une chaîne d'engrenage afin de transférer le couple
         du moteur dans tous les mécanismes de pattes.
       </Title>
+
       <Title size={3}>Explication</Title>
+
       <Text spacing="sm">
         Nous voudrions apporter à chaque mécanique de patte qui sera au nombre
         de 6, un moment qui le permettra de faire bouger sa patte. Nous avons à
         notre disposition 2 moteurs dont nous connaissons leur caractéristique.
       </Text>
+
       <Text spacing="sm">
         Nous souhaitons utiliser un moteur pour la réalisation de la fonction
         principale de notre hexapode : avancer de façon rectiligne d’un point A
         à un point B.
       </Text>
-      <Text spacing="sm">
+
+      <Text spacing="lg">
         Nous utiliserons le deuxième moteur pour mettre en mouvement d’autres
         éléments d’ordre secondaire comme les pinces ou la tête.
       </Text>
+
       <Title size={3}>Caractéristiques du moteur</Title>
+
       <div className="items-center md:flex md:flex-row">
         <ul>
           <List>Alimentation: 6 Vcc typique</List>
@@ -65,13 +75,16 @@ export default function ScorpixTransmissionTab() {
           ]}
         />
       </div>
+
       <Title size={3}>Formules associées aux engrenages</Title>
+
       <Text spacing="sm">
         Nous allons modéliser nos propres engrenages pour notre hexapode. Pour
         cela, nous devrons déterminer différentes caractéristiques à l'aide de
         formules pour nous permettre de réaliser une modélisation de ses
         engrenages.
       </Text>
+
       <Media
         size="xs"
         mediaItems={[
@@ -87,7 +100,9 @@ export default function ScorpixTransmissionTab() {
           },
         ]}
       />
+
       <Title size={3}>Solution proposée</Title>
+
       <Text spacing="md">
         Nous connaissons les caractéristiques de notre moteur qui généra le
         mouvement nécessaire au fonctionnement de notre hexapode.
@@ -95,21 +110,25 @@ export default function ScorpixTransmissionTab() {
         élevée que nécessaire. Nous devons réduire le moment généré par le
         moteur.
       </Text>
+
       <Text spacing="sm">
         Ne pouvant utiliser de l’électronique dans notre projet, nous sommes
         obligés d’utiliser une chaîne de transmission. Opter pour ce choix nous
         arrange pour les raisons suivantes :
       </Text>
+
       <ul>
         <List>
           C’est une solution simple à mettre en place, peu coûteux, fiable ;
         </List>
+
         <List>
           Nous pourrons inclure les 6 engrenages qui entraînent les mécanismes
           de patte dans cette chaîne de transmission autour d’un grand engrenage
           centrale afin de synchroniser les mouvements ;
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         Ainsi, l’idée est simple : la chaîne de transmission commence avec le
@@ -118,28 +137,35 @@ export default function ScorpixTransmissionTab() {
         la chaîne avec un plus grand engrenage afin de connecter sur celui-ci,
         les 6 engrenages des mécanismes de patte.
       </Text>
+
       <Text spacing="sm">
         Voici les points à travailler afin de proposer cette solution :
       </Text>
+
       <ul>
         <List>
           Étudier les engrenages de façon générale afin de savoir lequel
           répondra au mieux à notre objectif ;
         </List>
+
         <List>
           Calculer le nombre de dents que devra posséder chaque engrenage afin
           d'obtenir la vitesse de rotation voulue ;
         </List>
+
         <List>
           Réaliser le dessin de la forme général de nos engrenages afin qu'ils
           puissent former ensemble une chaîne de transmission ;
         </List>
+
         <List>
           Réaliser un support afin de voir comme la chaîne de transmission
           marchera avec le moteur ;
         </List>
       </ul>
+
       <Title size={3}>Schéma cinématique</Title>
+
       <Media
         size="md"
         mediaItems={[
@@ -150,12 +176,15 @@ export default function ScorpixTransmissionTab() {
           },
         ]}
       />
+
       <Title size={3}>Formules associées aux chaînes de transmission</Title>
+
       <Text spacing="md">
         Nous avons étudié les chaînes de transmission afin de connaître les
         formules qui lient les engrenages entre eux. Notre objectif est
         d'établir notre chaîne de transmission qui répondra à notre besoin.
       </Text>
+
       <Media
         size="xs"
         mediaItems={[
@@ -166,7 +195,9 @@ export default function ScorpixTransmissionTab() {
           },
         ]}
       />
+
       <Text spacing="md">Voici les formules que nous utiliserons :</Text>
+
       <ul>
         <List>
           Rapport de réduction :
@@ -176,6 +207,7 @@ export default function ScorpixTransmissionTab() {
             >{`\\( r = \\frac{Z_{menante}}{Z_{menée}} \\)`}</MathJax>
           </span>
         </List>
+
         <List>
           Vitesse de rotation :
           <span className="block w-full text-center text-2xl">
@@ -185,39 +217,47 @@ export default function ScorpixTransmissionTab() {
           </span>
         </List>
       </ul>
+
       <Title size={3}>
         Première Méthode - Calcul du nombre de dents des engrenages
       </Title>
+
       <Text spacing="md">
         Dans cette section, notre objectif sera de déterminer les
         caractéristiques de nos engrenages afin de les modéliser. Nos engrenages
         s’inscrivent dans une chaîne de transmission. Je rappelle que cette
         chaîne de transmission a deux buts :
       </Text>
+
       <ul className="ml-6 list-disc">
         <List>
           Transformer une vitesse de rotation de départ en une autre d’arrivée ;
         </List>
+
         <List>
           Avoir en sortie 6 engrenages afin d’actionner le mécanisme des pattes
           de façon synchronisée ;
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         Voici les paramètres fixés qui nous permettront de calculer les autres
         caractéristiques :
       </Text>
+
       <ul className="ml-6 list-disc">
         <List>
           Moteur (E1) : vitesse de rotation du moteur fournie,{" "}
           <MathJax inline>{`\\( T_1 = 570\\ \\text{tr/min} \\)`}</MathJax>
         </List>
+
         <List>
           Engrenages de sortie (E3) : vitesse de rotation désirée,{" "}
           <MathJax inline>{`\\( T_3 = 200\\ \\text{tr/min} \\)`}</MathJax>
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         Notre chaîne de transmission est composée d’un engrenage relié au moteur
@@ -226,17 +266,20 @@ export default function ScorpixTransmissionTab() {
         <MathJax inline>{`\\( T_{[num]} \\)`}</MathJax> et le nombre de dents
         par <MathJax inline>{`\\( D_{[num]} \\)`}</MathJax>.
       </Text>
+
       <Text spacing="md">
         La première méthode que j’ai voulue utiliser était par tâtonnement : je
         fixe des valeurs pour le nombre de dents, puis je calcule la vitesse de
         rotation de E3 afin de vérifier si j’ai bien la vitesse voulue.
       </Text>
+
       <Text spacing="md">
         Par exemple, voici la première proposition réalisée :{" "}
         <MathJax inline>{`\\( D_1 = 12,\\ D_2 = 36,\\ D_3 = 24 \\)`}</MathJax>.
         Nous réalisons le calcul des vitesses de rotation à l’aide des formules
         associées aux engrenages :
       </Text>
+
       <ul className="ml-6 list-disc">
         <List>
           Calcul du rapport de réduction entre E1 et E2 :{" "}
@@ -244,18 +287,21 @@ export default function ScorpixTransmissionTab() {
             inline
           >{`\\( R_{1/2} = \\frac{D_1}{D_2} = \\frac{12}{36} = 0.333 \\)`}</MathJax>
         </List>
+
         <List>
           Calcul de la vitesse de rotation de E2 :{" "}
           <MathJax
             inline
           >{`\\( T_2 = 0.333 \\times 570 = 190\\ \\text{tr/min} \\)`}</MathJax>
         </List>
+
         <List>
           Calcul du rapport de réduction entre E2 et E3 :{" "}
           <MathJax
             inline
           >{`\\( R_{2/3} = \\frac{D_2}{D_3} = \\frac{36}{24} = 1.5 \\)`}</MathJax>
         </List>
+
         <List>
           Calcul de la vitesse de rotation de E3 :{" "}
           <MathJax
@@ -263,32 +309,38 @@ export default function ScorpixTransmissionTab() {
           >{`\\( T_3 = 1.5 \\times 190 = 285\\ \\text{tr/min} \\)`}</MathJax>
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         On remarque que 285 tr/min ne correspond pas à la vitesse de rotation
         désirée de 200 tr/min, donc cette configuration ne convient pas.
       </Text>
+
       <Text spacing="md">
         Deuxième proposition réalisée :{" "}
         <MathJax inline>{`\\( D_1 = 15,\\ D_2 = 30,\\ D_3 = 16 \\)`}</MathJax>.
         Nous réalisons le calcul des vitesses de rotation à l’aide des formules
         associées aux chaînes de transmission :
       </Text>
+
       <ul className="ml-6 list-disc">
         <List>
           Calcul du rapport de réduction entre E1 et E2 :{" "}
           <MathJax inline>{`\\( R_{1/2} = \\frac{15}{30} = 0.5 \\)`}</MathJax>
         </List>
+
         <List>
           Calcul de la vitesse de rotation de E2 :{" "}
           <MathJax
             inline
           >{`\\( T_2 = 0.5 \\times 570 = 285\\ \\text{tr/min} \\)`}</MathJax>
         </List>
+
         <List>
           Calcul du rapport de réduction entre E2 et E3 :{" "}
           <MathJax inline>{`\\( R_{2/3} = \\frac{30}{16} = 1.875 \\)`}</MathJax>
         </List>
+
         <List>
           Calcul de la vitesse de rotation de E3 :{" "}
           <MathJax
@@ -296,50 +348,61 @@ export default function ScorpixTransmissionTab() {
           >{`\\( T_3 = 1.875 \\times 285 = 534.375\\ \\text{tr/min} \\)`}</MathJax>
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         On remarque que 534.375 tr/min ne correspond pas à la vitesse de
         rotation désirée de 200 tr/min, donc cette configuration ne convient
         pas.
       </Text>
+
       <Text spacing="md">
         La méthode de tâtonnement ne convient pas pour trouver la bonne
         configuration de cette chaîne de transmission.
       </Text>
+
       <Title size={3}>
         Deuxième méthode - Calcul du nombre de dents des engrenages
       </Title>
+
       <Text spacing="md">
         Nous avons vu que la première méthode ne permet pas de déterminer la
         configuration de nos engrenages. Nous allons utiliser une autre
         technique : nous allons poser certaines inconnues en paramètre afin de
         déterminer le reste des inconnues.
       </Text>
+
       <Text spacing="md">Voici les paramètres qui sont déjà fixés :</Text>
+
       <ul className="ml-6 list-disc">
         <List>
           Moteur (E1) : vitesse de rotation du moteur fournie,{" "}
           <MathJax inline>{`\\( T_1 = 570\\ \\text{tr/min} \\)`}</MathJax>
         </List>
+
         <List>
           Engrenages de sortie (E3) : vitesse de rotation désirée,{" "}
           <MathJax inline>{`\\( T_3 = 200\\ \\text{tr/min} \\)`}</MathJax>
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         Voici les inconnues que nous avons posées en paramètre :
       </Text>
+
       <ul className="ml-6 list-disc">
         <List>
           Engrenage de sortie (E3) :{" "}
           <MathJax inline>{`\\( D_3 = 25\\ \\text{dents} \\)`}</MathJax>
         </List>
+
         <List>
           Engrenage central (E2) :{" "}
           <MathJax inline>{`\\( D_2 = 60\\ \\text{dents} \\)`}</MathJax>
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         Notre objectif est d'effectuer le chemin inverse (sorties → central →
@@ -348,10 +411,12 @@ export default function ScorpixTransmissionTab() {
         configuration en faisant le calcul dans le bon sens (moteur → central →
         sorties).
       </Text>
+
       <Text spacing="md">
         Déterminons le nombre de dents <MathJax inline>{`\\( D_1 \\)`}</MathJax>{" "}
         de l'engrenage moteur :
       </Text>
+
       <ul className="ml-6 list-disc">
         <List>
           Pour l'engrenage de sortie (E3) :{" "}
@@ -403,11 +468,13 @@ export default function ScorpixTransmissionTab() {
           <MathJax inline>{`\\( D_1 = 9\\ \\text{dents} \\)`}</MathJax>
         </List>
       </ul>
+
       <Text spacing="md">
         <br />
         En conclusion, la configuration de notre chaîne de transmission est la
         suivante :
       </Text>
+
       <ul className="ml-6 list-disc">
         <List>
           <MathJax inline>{`\\( D_1 = 9\\ \\text{dents} \\)`}</MathJax>
@@ -480,7 +547,7 @@ export default function ScorpixTransmissionTab() {
         ]}
       />
 
-      <Text>
+      <Text spacing="lg">
         Lorsque nous avons mis en route le moteur, la chaîne de transmission a
         été fonctionnelle. A partir, d'un seul mouvement circulaire délivré par
         le moteur, nous avons pu réduire la vitesse de rotation et le distribuer
@@ -561,7 +628,7 @@ export default function ScorpixTransmissionTab() {
         avantage de baisser le centre de gravité de l'hexapode.
       </Text>
 
-      <Text spacing="md">
+      <Text spacing="lg">
         Nous allons désormais réaliser le prototype 2 de la transmission avec
         cette nouvelle solution afin de la tester pour pouvoir ensuite
         l'injecter dans l'hexapode.

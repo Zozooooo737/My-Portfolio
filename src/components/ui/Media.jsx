@@ -39,7 +39,7 @@ const AutoGrid = ({ mediaItems, onClick, size }) => {
         <div
           key={index}
           onClick={() => onClick(index)}
-          className="relative cursor-pointer overflow-hidden rounded-lg bg-black/5"
+          className="relative cursor-pointer overflow-hidden bg-black/5"
         >
           {media.type === "image" ? (
             <img

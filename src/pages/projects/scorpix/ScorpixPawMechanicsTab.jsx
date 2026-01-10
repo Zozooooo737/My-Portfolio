@@ -282,7 +282,7 @@ export default function ScorpixPawMechanicsTab() {
         ]}
       />
 
-      <Text>
+      <Text spacing="lg">
         Nous pouvons observer sur ce schéma la raison qui empêche le
         fonctionnement du prototype 2. le cercle que décrit la bielle (B) ne
         croise jamais le cercle que décrit la patte (P). Ainsi pour résoudre ce
@@ -359,7 +359,7 @@ export default function ScorpixPawMechanicsTab() {
         </List>
       </ul>
 
-      <Text>
+      <Text spacing="lg">
         <br />
         Ce prototype est une réussite sur le système [manivelle ; crochet ;
         bielle] car il est fluide et dynamique. Maintenant nous devons avancer
@@ -387,7 +387,7 @@ export default function ScorpixPawMechanicsTab() {
         ]}
       />
 
-      <Text>
+      <Text spacing="lg">
         On peut bien observer que la bielle rentre en contact avec la partie
         supérieur de la structure, ce qui bloque totalement le fonctionnement du
         mécanisme. <br /> <br />
@@ -526,7 +526,7 @@ export default function ScorpixPawMechanicsTab() {
         </List>
       </ul>
 
-      <Text>
+      <Text spacing="lg">
         <br />
         Ce prototype est une véritable réussite même s'il nécessite quelques
         ajustements afin d'avoir un prototype finalisé.
@@ -598,7 +598,7 @@ export default function ScorpixPawMechanicsTab() {
         </List>
       </ul>
 
-      <Text>
+      <Text spacing="lg">
         <br />
         Ce prototype a permis de mettre en valeur les différents points qui
         rendaient imprécis le mouvement. Nous avons aussi remarqué l’erreur de
@@ -666,7 +666,7 @@ export default function ScorpixPawMechanicsTab() {
         </List>
       </ul>
 
-      <Text>
+      <Text spacing="lg">
         <br />
         Ce prototype est une réussite totale sur le plan mécanique. Il
         représente la version haut de gamme de la mécanique de la patte, avec
@@ -705,7 +705,7 @@ export default function ScorpixPawMechanicsTab() {
         ]}
       />
 
-      <Text>
+      <Text spacing="lg">
         Pour réaliser ce prototype, nous avons réalisé le même travail qu’avec
         le prototype précédent, nous avons réalisé une séance de calibrage. Nous
         avons désormais 2 versions finalisés de notre mécanique de patte.

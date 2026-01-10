@@ -1,7 +1,6 @@
 import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
 import Media from "@/components/ui/Media";
-import List from "@/components/ui/List";
 
 import { scorpixPaw } from "@/assets/ScorpixAssets";
 
@@ -20,7 +19,7 @@ export default function ScorpixPawTab() {
 
       <Title size="3">Prototype 1</Title>
 
-      <Text>
+      <Text spacing="md">
         Une patte a déjà été réalisé dans la partie Mécanique de Patte afin de
         se rendre compte de son effet. La patte est simple et n'est pas
         techniquement complexe.
@@ -37,7 +36,7 @@ export default function ScorpixPawTab() {
         ]}
       />
 
-      <Text>
+      <Text spacing="lg">
         Cette patte n'est pas très complexe mais est suffisante pour la
         réalisation de notre hexapode 1.
       </Text>
@@ -68,6 +67,14 @@ export default function ScorpixPawTab() {
         ]}
       />
 
+      <Text spacing="lg">
+        Le fonctionnement est très simple et amovible. Le pied est pris en étaux
+        entre les deux pattes et fixé par un axe pivot. Une autre pièce en forme
+        de bague vient aussi compléter ce système afin de bloquer le pied.
+        Lorsque la bague est relevé, nous pouvons tourner le pied et changer sa
+        longueur et sa forme.
+      </Text>
+
       <Media
         size="md"
         layout="grid"
@@ -91,16 +98,7 @@ export default function ScorpixPawTab() {
       />
 
       <Text spacing="md">
-        {" "}
         <br />
-        Le fonctionnement est très simple et amovible. Le pied est pris en étaux
-        entre les deux pattes et fixé par un axe pivot. Une autre pièce en forme
-        de bague vient aussi compléter ce système afin de bloquer le pied.
-        Lorsque la bague est relevé, nous pouvons tourner le pied et changer sa
-        longueur et sa forme.
-      </Text>
-
-      <Text spacing="md">
         Un coté est simple et arrondis et l'autre est plus long et crochus. Le
         coté crochus pourra permettre d'avoir plus d'adhérence sur certaine
         surface comme la moquette.
@@ -111,7 +109,7 @@ export default function ScorpixPawTab() {
         bonus comme évoluer sur un plan incliné, ou sur certaine surface.
       </Text>
 
-      <Text spacing="lg">
+      <Text spacing="xl">
         Cette nouvelle patte sera utilisé pour le prototype 2 de l'hexapode.
       </Text>
     </div>

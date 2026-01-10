@@ -69,6 +69,27 @@ import ScorpixPawProto2_1 from "@/assets/projects/scorpix/scorpix-paw-proto-2-1.
 import ScorpixPawProto2_2 from "@/assets/projects/scorpix/scorpix-paw-proto-2-2.png";
 import ScorpixPawProto2_3 from "@/assets/projects/scorpix/scorpix-paw-proto-2-3.png";
 
+import ScorpixStructTransmission from "@/assets/projects/scorpix/scorpix-struct-transmission.png";
+import ScorpixStructMechanic from "@/assets/projects/scorpix/scorpix-struct-mechanic.png";
+import ScorpixStructPaw from "@/assets/projects/scorpix/scorpix-struct-paw.png";
+import ScorpixStructEngine from "@/assets/projects/scorpix/scorpix-struct-engine.png";
+import ScorpixStructBattery from "@/assets/projects/scorpix/scorpix-struct-battery.png";
+import ScorpixStructSchema1 from "@/assets/projects/scorpix/scorpix-struct-schema-1.png";
+import ScorpixStructProblem1 from "@/assets/projects/scorpix/scorpix-struct-problem-1.png";
+import ScorpixStructMode1W from "@/assets/projects/scorpix/scorpix-struct-mode-1-w.png";
+import ScorpixStructMode1WO from "@/assets/projects/scorpix/scorpix-struct-mode-1-wo.png";
+import ScorpixStructMode2W from "@/assets/projects/scorpix/scorpix-struct-mode-2-w.png";
+import ScorpixStructMode2WO from "@/assets/projects/scorpix/scorpix-struct-mode-2-wo.png";
+import ScorpixStructMode3W from "@/assets/projects/scorpix/scorpix-struct-mode-3-w.png";
+import ScorpixStructMode3WO from "@/assets/projects/scorpix/scorpix-struct-mode-3-wo.png";
+import ScorpixStructProto1_1 from "@/assets/projects/scorpix/scorpix-struct-proto-1-1.png";
+import ScorpixStructProto1_2 from "@/assets/projects/scorpix/scorpix-struct-proto-1-2.png";
+import ScorpixStructProto2_1 from "@/assets/projects/scorpix/scorpix-struct-proto-2-1.png";
+import ScorpixStructProto2_2 from "@/assets/projects/scorpix/scorpix-struct-proto-2-2.png";
+import ScorpixStructProto2_3 from "@/assets/projects/scorpix/scorpix-struct-proto-2-3.png";
+import ScorpixStructProto3_1 from "@/assets/projects/scorpix/scorpix-struct-proto-3-1.png";
+import ScorpixStructProto3_2 from "@/assets/projects/scorpix/scorpix-struct-proto-3-2.png";
+
 export const scorpixImages = {
   portrait1: ScorpixPortrait1,
   portrait2: ScorpixPortrait2,
@@ -148,4 +169,27 @@ export const scorpixPaw = {
   proto2_1: ScorpixPawProto2_1,
   proto2_2: ScorpixPawProto2_2,
   proto2_3: ScorpixPawProto2_3,
+};
+
+export const scorpixStruct = {
+  transmission: ScorpixStructTransmission,
+  mechanic: ScorpixStructMechanic,
+  paw: ScorpixStructPaw,
+  engine: ScorpixStructEngine,
+  battery: ScorpixStructBattery,
+  schema1: ScorpixStructSchema1,
+  problem1: ScorpixStructProblem1,
+  mode1w: ScorpixStructMode1W,
+  mode1wo: ScorpixStructMode1WO,
+  mode2w: ScorpixStructMode2W,
+  mode2wo: ScorpixStructMode2WO,
+  mode3w: ScorpixStructMode3W,
+  mode3wo: ScorpixStructMode3WO,
+  proto1_1: ScorpixStructProto1_1,
+  proto1_2: ScorpixStructProto1_2,
+  proto2_1: ScorpixStructProto2_1,
+  proto2_2: ScorpixStructProto2_2,
+  proto2_3: ScorpixStructProto2_3,
+  proto3_1: ScorpixStructProto3_1,
+  proto3_2: ScorpixStructProto3_2,
 };
