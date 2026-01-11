@@ -154,7 +154,7 @@ const ProfileHeader = () => {
               label: "Localisation",
               value: "Île-de-France, France",
             },
-            { icon: "🎂", label: "Âge", value: "20 ans" },
+            { icon: "🎂", label: "Âge", value: "21 ans" },
             { icon: "🎓", label: "Ecole", value: "ESILV" },
             {
               icon: "📚",

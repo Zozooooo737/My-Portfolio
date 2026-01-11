@@ -2,7 +2,7 @@ const timelineData = [
   {
     id: 1,
     title: "Soft Skills : Améliorez Son Efficacité Individuelle et Collective",
-    date: "Novembre - 2022",
+    date: "2022 - Novembre",
     description:
       "Formation sur la gestion du temps, l'apprentissage efficace, la pensée critique, la gestion de projet et le travail en équipe.",
   },
@@ -17,7 +17,7 @@ const timelineData = [
   {
     id: 3,
     title: "Hackaton : Solution RSE",
-    date: "Avril - 2023",
+    date: "2023 - Avril",
     description:
       "Hackathon sur le sport durable et responsable, visant à développer le travail en équipe pluridisciplinaire et à concevoir des solutions innovantes pour des enjeux sociétaux et environnementaux.",
   },
@@ -31,7 +31,7 @@ const timelineData = [
   {
     id: 5,
     title: "Vie Associative : Intégration Etudiant ESILV",
-    date: "Septembre - 2023",
+    date: "2023 - Septembre",
     description:
       "Intégration des nouveaux étudiants ingénieurs via une journée de bienvenue, une intervention en amphithéâtre, un parrainage, l'écriture d'un guide de survie et un afterwork sur Paris.",
   },
@@ -45,7 +45,7 @@ const timelineData = [
   {
     id: 7,
     title: "Projet : Scorpix - PIX 1",
-    date: "Juin - 2024",
+    date: "2024 - Juin",
     description:
       "Réalisation d'un hexapode mécanique modulable se déplaçant de façon rectiligne.",
     link: "/projects/scorpix",
@@ -60,7 +60,7 @@ const timelineData = [
   {
     id: 9,
     title: "Soft Skills : Coopérer en équipe",
-    date: "Novembre - 2024",
+    date: "2024 - Novembre",
     description:
       "Formation sur les dynamiques d'équipe, les profils comportementaux, la communication positive, la gestion des conflits et le feedback constructif.",
   },
@@ -75,7 +75,7 @@ const timelineData = [
   {
     id: 10,
     title: "Hackaton : Hyperconnexion et Hypertransparence des données",
-    date: "Février - 2025",
+    date: "2025 - Février",
     description:
       "Dévéloppement en équipe d'une solution pour la protection de notre vie privée et de nos données personnelles.",
   },
@@ -89,7 +89,7 @@ const timelineData = [
   {
     id: 12,
     title: "Stage Ingénieur – Hive Robotics",
-    date: "Juin - 2025",
+    date: "2025 - Juin",
     description:
       "Stage de 2 mois chez Hive Robotics, startup développant un robot autonome de transport urbain. J’ai participé à la conception d’une nouvelle version du coffre, plus robuste et adaptée à la production en série, en réalisant diverses tâches mêlant mécatronique, impression 3D, prototypage et tests électroniques.",
   },

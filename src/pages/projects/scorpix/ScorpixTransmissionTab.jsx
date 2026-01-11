@@ -427,25 +427,40 @@ export default function ScorpixTransmissionTab() {
         </List>
 
         <List>
-          Pour l'engrenage central (E2) :{" "}
-          <MathJax inline>
-            {`
-            D_2 = 60,\\ 
-            R_{3/2} = \\frac{D_3}{D_2} = \\frac{25}{60} = 0.4166,\\ 
-            T_2 = T_3 \\times R_{3/2} = 200 \\times 0.4166 = 83.333\\ \\text{tr/min}
-            `}
-          </MathJax>
+          Pour l'engrenage central (E2) :
+          <span className="block w-full text-center">
+            <MathJax inline>
+              {`
+              \\(
+              \\begin{aligned}
+              D_2 &= 60 \\\\
+              R_{3/2} &= \\frac{D_3}{D_2} = \\frac{25}{60} = 0.4166 \\\\
+              T_2 &= T_3 \\times R_{3/2}
+                  = 200 \\times 0.4166
+                  = 83.333\\ \\text{tr/min}
+              \\end{aligned}
+              \\)
+              `}
+            </MathJax>
+          </span>
         </List>
 
         <List>
-          Pour l'engrenage moteur (E1) :{" "}
-          <MathJax inline>
-            {`
-            D_1 = ? ,\\ 
-            R_{2/1} = \\frac{D_2}{D_1} = \\frac{60}{D_1},\\ 
-            T_1 = T_2 \\times R_{2/1} = 83.333 \\times \\frac{60}{D_1}
-            `}
-          </MathJax>
+          Pour l'engrenage moteur (E1) :
+          <span className="block w-full text-center">
+            <MathJax inline>
+              {`
+              \\(
+              \\begin{aligned}
+              D_1 &= ? \\\\
+              R_{2/1} &= \\frac{D_2}{D_1} = \\frac{60}{D_1} \\\\
+              T_1 &= T_2 \\times R_{2/1}
+                  = 83.333 \\times \\frac{60}{D_1}
+              \\end{aligned}
+              \\)
+              `}
+            </MathJax>
+          </span>
         </List>
 
         <List>
