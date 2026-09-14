@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export default function List({ children }) {
   return (
@@ -7,3 +7,7 @@ export default function List({ children }) {
     </li>
   );
 }
+
+List.propTypes = {
+  children: PropTypes.node.isRequired,
+};

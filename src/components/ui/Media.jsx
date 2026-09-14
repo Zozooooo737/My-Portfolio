@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -193,6 +194,24 @@ const Media = ({ mediaItems, size = "full", layout = "carousel" }) => {
       )}
     </>
   );
+};
+
+const mediaItemPropType = PropTypes.shape({
+  type: PropTypes.oneOf(["image", "video"]).isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+});
+
+AutoGrid.propTypes = {
+  mediaItems: PropTypes.arrayOf(mediaItemPropType).isRequired,
+  onClick: PropTypes.func.isRequired,
+  size: PropTypes.oneOf(["full", "lg", "md", "sm", "xs"]).isRequired,
+};
+
+Media.propTypes = {
+  mediaItems: PropTypes.arrayOf(mediaItemPropType).isRequired,
+  size: PropTypes.oneOf(["full", "lg", "md", "sm", "xs"]),
+  layout: PropTypes.oneOf(["carousel", "grid"]),
 };
 
 export default Media;

@@ -98,9 +98,9 @@ export default function PresentationTab() {
           <div>
             <Text>
               Nous avons réalisé ce projet dans le cadre du Projet Ingénieur
-              eXploration en première année d'ESILV, <b>PIX 1</b>. Notre
+              eXploration en première année d’ESILV, <b>PIX 1</b>. Notre
               objectif était de réaliser un <b>hexapode mécanique</b> capable de
-              se déplacer de façon rectiligne. Nous devions réaliser l'hexapode
+              se déplacer de façon rectiligne. Nous devions réaliser l’hexapode
               de A à Z sachant que deux moteurs et une batterie nous ont été
               fournis. Par la suite, nous pouvions envisager des fonctionnalités
               supplémentaires comme transporter une charge. Notre réflexion
@@ -126,14 +126,14 @@ export default function PresentationTab() {
             </ul>
           </div>
 
-          <Title size={2}>2. État de l'Art et Exploration des Solutions</Title>
+          <Title size={2}>2. État de l’Art et Exploration des Solutions</Title>
           <ul>
             <List>
-              <b>Étude des mécanismes d'hexapodes existants :</b> Comparaison
+              <b>Étude des mécanismes d’hexapodes existants :</b> Comparaison
               entre bipode et tripode.
             </List>
             <List>
-              <b>Analyse des systèmes de transmission et d'engrenages :</b>{" "}
+              <b>Analyse des systèmes de transmission et d’engrenages :</b>{" "}
               Choix des mécanismes les plus adaptés.
             </List>
             <List>
@@ -179,7 +179,7 @@ export default function PresentationTab() {
       </Text>
       <ul className="pt-1.5 pb-5">
         <List>
-          <b>Transmission :</b> Assure la distribution équilibrée de l'énergie
+          <b>Transmission :</b> Assure la distribution équilibrée de l’énergie
           aux six pattes.
         </List>
         <List>
@@ -197,7 +197,7 @@ export default function PresentationTab() {
 
       <Title>Méthode de Conception et Processus de Fabrication</Title>
       <Text>
-        Nous avons suivi une approche en itérations successives, s'articulant
+        Nous avons suivi une approche en itérations successives, s’articulant
         autour des étapes suivantes :
       </Text>
       <ul>
@@ -228,7 +228,7 @@ export default function PresentationTab() {
 
       <Title>Prototype Final et Performances</Title>
       <Text>
-        L'hexapode final est un robot pleinement fonctionnel, capable de se
+        L’hexapode final est un robot pleinement fonctionnel, capable de se
         déplacer efficacement en adoptant une locomotion tripode optimisée.
       </Text>
 
@@ -238,7 +238,7 @@ export default function PresentationTab() {
         <div className="flex w-full flex-col gap-y-8 md:flex-row md:items-center md:gap-x-10">
           <div className="md:shrink-0 md:basis-[40%]">
             <Quote title="Modulable">
-              Un prototype adaptable, capable d'accueillir différents modules
+              Un prototype adaptable, capable d’accueillir différents modules
               pour répondre à des besoins spécifiques et étendre ses
               fonctionnalités.
             </Quote>
@@ -265,7 +265,7 @@ export default function PresentationTab() {
               Une conception robuste avec des pattes indépendantes mais
               parfaitement synchronisées, permettant une locomotion fluide sur
               terrain plat. Les extrémités des pattes sont modulables pour
-              s'adapter à différents types de terrains.
+              s’adapter à différents types de terrains.
             </Quote>
           </div>
 
@@ -276,7 +276,7 @@ export default function PresentationTab() {
                 {
                   type: "video",
                   src: scorpixVideos.peak,
-                  alt: "Scorpix avec les l'extrémité des pattes amovibles (plat ou pique)",
+                  alt: "Scorpix avec les l’extrémité des pattes amovibles (plat ou pique)",
                 },
               ]}
             />
@@ -287,8 +287,8 @@ export default function PresentationTab() {
         <div className="flex w-full flex-col gap-y-8 md:flex-row md:items-center md:gap-x-10">
           <div className="md:shrink-0 md:basis-[40%]">
             <Quote title="Transmission optimisée">
-              Un système d'engrenages conçu pour minimiser les frictions,
-              réduisant ainsi les pertes d'énergie et améliorant la
+              Un système d’engrenages conçu pour minimiser les frictions,
+              réduisant ainsi les pertes d’énergie et améliorant la
               synchronisation des pattes.
             </Quote>
           </div>
@@ -310,7 +310,7 @@ export default function PresentationTab() {
         {/* Bloc 4 : media / quote */}
         <div className="flex w-full flex-col items-center gap-y-8 md:flex-row-reverse md:items-center md:gap-x-10">
           <Quote title="Facilité de maintenance">
-            L'hexapode est entièrement démontable et remontable, avec des
+            L’hexapode est entièrement démontable et remontable, avec des
             sous-parties indépendantes pour une réparation rapide.
           </Quote>
           <div className="w-full md:w-[60%]">
@@ -334,8 +334,8 @@ export default function PresentationTab() {
         {/* Bloc 5 : quote / media */}
         <div className="flex w-full flex-col items-center gap-y-8 md:flex-row md:items-center md:gap-x-10">
           <Quote title="Un Hexapode Prêt à Tout">
-            L'hexapode Scorpix est conçu pour relever tous les défis. Grâce à sa
-            conception modulaire et adaptable, il peut s'adapter à de multiples
+            L’hexapode Scorpix est conçu pour relever tous les défis. Grâce à sa
+            conception modulaire et adaptable, il peut s’adapter à de multiples
             scénarios.
           </Quote>
           <div className="w-full md:w-[60%]">
@@ -386,7 +386,7 @@ export default function PresentationTab() {
         <div className="mt-6">
           <Title size={2}>Épreuves du Concours</Title>
           <Text>
-            Lors de cette journée, l'hexapode a été soumis à plusieurs épreuves
+            Lors de cette journée, l’hexapode a été soumis à plusieurs épreuves
             afin de connaitre ses limites et mettre en valeur ses qualités.
           </Text>
         </div>
@@ -395,15 +395,15 @@ export default function PresentationTab() {
           <ul className="space-y-10">
             <List>
               <b>Déplacement rectiligne :</b> Cette épreuve évaluait la
-              précision et l'efficacité du mouvement de l'hexapode.
+              précision et l’efficacité du mouvement de l’hexapode.
             </List>
             <List>
-              <b>Transport d'une charge :</b> Ce test mesurait la capacité de
-              l'hexapode à transporter une charge sur une certaine distance.
+              <b>Transport d’une charge :</b> Ce test mesurait la capacité de
+              l’hexapode à transporter une charge sur une certaine distance.
             </List>
             <List>
               <b>Gravir une pente :</b> Cette épreuve testait la capacité de
-              l'hexapode à franchir une pente dont l'inclinaison augmentait
+              l’hexapode à franchir une pente dont l’inclinaison augmentait
               progressivement.
             </List>
             <List>
@@ -438,7 +438,7 @@ export default function PresentationTab() {
               {
                 type: "image",
                 src: scorpixImages.price, // Remplace ce nom si besoin
-                alt: "Image du prix d'esthétique reçu par notre Scorpix",
+                alt: "Image du prix d’esthétique reçu par notre Scorpix",
               },
             ]}
           />

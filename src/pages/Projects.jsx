@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "@/components/projects/Card";
 import projectsData from "@/data/projectsData";
 import { skillsData } from "@/data/skillsData";

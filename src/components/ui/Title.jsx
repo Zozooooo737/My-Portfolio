@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export default function Title({ children, size = 1 }) {
   if (size == 2) {
@@ -20,3 +20,8 @@ export default function Title({ children, size = 1 }) {
     </div>
   );
 }
+
+Title.propTypes = {
+  children: PropTypes.node.isRequired,
+  size: PropTypes.oneOf([1, 2]),
+};

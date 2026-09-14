@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function UnderConstruction() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center text-center">

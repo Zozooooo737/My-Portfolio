@@ -1,4 +1,5 @@
 import SkillCard from "@/components/skills/SkillCard";
+import PropTypes from "prop-types";
 import { useRef, useState, useEffect } from "react";
 
 export const SkillsList = ({ skills }) => {
@@ -116,6 +117,24 @@ const SkillCategory = ({ category }) => {
       </div>
     </div>
   );
+};
+
+SkillsList.propTypes = {
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      skills: PropTypes.array.isRequired,
+    }),
+  ).isRequired,
+};
+
+SkillCategory.propTypes = {
+  category: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    skills: PropTypes.array.isRequired,
+  }).isRequired,
 };
 
 export default SkillsList;

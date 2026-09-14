@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { getProjectsByIds } from "@/utils/DataHelpers";
@@ -106,6 +107,18 @@ const SkillCard = ({ skill }) => {
       )}
     </>
   );
+};
+
+SkillCard.propTypes = {
+  skill: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    level: PropTypes.number,
+    logo: PropTypes.string,
+    color: PropTypes.string,
+    description: PropTypes.string,
+    projects: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 };
 
 export default SkillCard;

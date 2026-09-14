@@ -51,7 +51,7 @@ export default function ScorpixPawMechanicsTab() {
           {
             type: "image",
             src: scorpixMecha.schema1,
-            alt: "Schéma du mouvement d'une patte",
+            alt: "Schéma du mouvement d’une patte",
           },
         ]}
       />
@@ -218,14 +218,14 @@ export default function ScorpixPawMechanicsTab() {
 
       <ul>
         <List>
-          Réduire la hauteur du mécanisme pour qu'il soit plus compact.
+          Réduire la hauteur du mécanisme pour qu’il soit plus compact.
         </List>
         <List>
           Réaliser un support adapté au mécanisme pour optimiser le bois
           utilisé.
         </List>
         <List>
-          Envisager une pièce pour simuler l'effet de la bielle sur la patte.
+          Envisager une pièce pour simuler l’effet de la bielle sur la patte.
         </List>
       </ul>
 
@@ -250,7 +250,7 @@ export default function ScorpixPawMechanicsTab() {
       />
 
       <Text>
-        Lorsque nous réalisons une simulation de l'impact de la bielle sur la
+        Lorsque nous réalisons une simulation de l’impact de la bielle sur la
         patte, nous rencontrons des difficultés. En effet, la position de patte
         et la longueur de la bielle peut rendre impossible le mouvement.
       </Text>
@@ -335,7 +335,7 @@ export default function ScorpixPawMechanicsTab() {
           Jeu important au niveau de la manivelle qui donne trop de liberté au
           mécanisme.
         </List>
-        <List>L'amplitude horizontal n'est pas assez significative.</List>
+        <List>L’amplitude horizontal n’est pas assez significative.</List>
         <List>
           Les perforations ne sont pas bien calculé pour accueillir les tiges en
           bois.
@@ -364,7 +364,7 @@ export default function ScorpixPawMechanicsTab() {
         <br />
         Ce prototype est une réussite sur le système [manivelle ; crochet ;
         bielle] car il est fluide et dynamique. Maintenant nous devons avancer
-        sur l'efficacité de la patte, afin qu'elle soit optimal !
+        sur l’efficacité de la patte, afin qu’elle soit optimal !
       </Text>
 
       <Title>Problème de collision de la bielle sur la structure</Title>
@@ -394,7 +394,7 @@ export default function ScorpixPawMechanicsTab() {
         mécanisme. <br /> <br />
         Nous pouvons affirmer que la raison principale de ce blocage est dû à la
         prolongation de la structure supérieur du support. La forme de la patte
-        doit donc s'étendre encore plus loin.
+        doit donc s’étendre encore plus loin.
       </Text>
 
       <Title>Prototype 3</Title>
@@ -445,7 +445,7 @@ export default function ScorpixPawMechanicsTab() {
         </List>
         <List>Jeu important dans la rotule de la patte.</List>
         <List>
-          Absence d'une pièce permettant la fixation de la rotule de la patte.
+          Absence d’une pièce permettant la fixation de la rotule de la patte.
         </List>
       </ul>
 
@@ -495,9 +495,9 @@ export default function ScorpixPawMechanicsTab() {
 
       <Text>
         Ce prototype est fonctionnel et réponds à la fonction principale que
-        nous lui avons assigné : réaliser le mouvement de la patte à partir d'un
+        nous lui avons assigné : réaliser le mouvement de la patte à partir d’un
         mouvement circulaire. Il nécessite encore quelques ajustements pour
-        pouvoir l'intégrer à la structure général.
+        pouvoir l’intégrer à la structure général.
       </Text>
 
       <Title size="2">Problèmes rencontrés :</Title>
@@ -509,7 +509,7 @@ export default function ScorpixPawMechanicsTab() {
           structure ;
         </List>
         <List>
-          La patte à un degré de liberté supplémentaire qui annule l'effet de la
+          La patte à un degré de liberté supplémentaire qui annule l’effet de la
           bielle sur la patte ;
         </List>
       </ul>
@@ -522,15 +522,15 @@ export default function ScorpixPawMechanicsTab() {
           à une bonne liaison ;
         </List>
         <List>
-          Ajouter une patte afin d'avoir un volume qui prends en sandwich la
+          Ajouter une patte afin d’avoir un volume qui prends en sandwich la
           bielle.
         </List>
       </ul>
 
       <Text spacing="lg">
         <br />
-        Ce prototype est une véritable réussite même s'il nécessite quelques
-        ajustements afin d'avoir un prototype finalisé.
+        Ce prototype est une véritable réussite même s’il nécessite quelques
+        ajustements afin d’avoir un prototype finalisé.
       </Text>
 
       <Title>Prototype 5</Title>
@@ -724,8 +724,8 @@ export default function ScorpixPawMechanicsTab() {
 
       <ul>
         <List>
-          La liaison vilebrequin/engrenage s'est brisé lors du fonctionnement
-          normal de l'hexapode.
+          La liaison vilebrequin/engrenage s’est brisé lors du fonctionnement
+          normal de l’hexapode.
         </List>
         <List>
           La tige supérieure du vilebrequin être trop longue et empêche la
@@ -735,7 +735,7 @@ export default function ScorpixPawMechanicsTab() {
           Lors du fonctionnement, certains manetons des mécaniques de pattes se
           cognent entre eux.
         </List>
-        <List>Lors du transport du prototype, une bielle s'est brisée.</List>
+        <List>Lors du transport du prototype, une bielle s’est brisée.</List>
       </ul>
 
       <Title size="2">Solutions apportées</Title>
@@ -749,7 +749,7 @@ export default function ScorpixPawMechanicsTab() {
           pour ajuster la hauteur du vilebrequin.
         </List>
         <List>
-          Modéliser une nouvelle forme de maneton afin d'éviter le cognement.
+          Modéliser une nouvelle forme de maneton afin d’éviter le cognement.
         </List>
         <List>Réaliser une bielle plus résistante.</List>
       </ul>
@@ -775,14 +775,14 @@ export default function ScorpixPawMechanicsTab() {
         plus solide en la rendant rectangulaire. De plus, cela permettra de
         démonter cette partie plus facilement. En effet, pour démonter notre
         hexapode, nous devons retirer les engrenages des mécaniques de pattes.
-        Pour le maneton, nous avons réduit l'épaisseur de l'anneau et avons
+        Pour le maneton, nous avons réduit l’épaisseur de l’anneau et avons
         vérifié sa résistance. Enfin, pour la bielle, nous avons augmenté sa
         largeur.
       </Text>
 
       <Text spacing="xl">
         Ces nouvelles pièces seront utilisées pour réaliser le prototype 2 de
-        l'hexapode.
+        l’hexapode.
       </Text>
 
       <NextTab to="/projects/scorpix/transmission" label="Transmission" />

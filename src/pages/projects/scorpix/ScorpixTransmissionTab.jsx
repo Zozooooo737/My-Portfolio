@@ -15,15 +15,15 @@ export default function ScorpixTransmissionTab() {
         La transmission a pour rôle de transformer le couple et le mouvement
         généré par le moteur afin de faire fonctionner le mécanisme des pattes.
         Le système doit réaliser une réduction de sa vitesse de rotation. Pour
-        répondre à cela, nous réaliserons une chaîne d'engrenage.
+        répondre à cela, nous réaliserons une chaîne d’engrenage.
       </Text>
 
       <Text spacing="md">
-        La chaîne d'engrenage doit être simple et fiable.
+        La chaîne d’engrenage doit être simple et fiable.
       </Text>
 
       <Title size={2}>
-        Objectif : Réaliser une chaîne d'engrenage afin de transférer le couple
+        Objectif : Réaliser une chaîne d’engrenage afin de transférer le couple
         du moteur dans tous les mécanismes de pattes.
       </Title>
 
@@ -60,8 +60,8 @@ export default function ScorpixTransmissionTab() {
             </ul>
           </List>
           <List>Dimensions : 49 x 12 x 15,5 mm</List>
-          <List>Diamètre de l'axe : 3 mm (avec méplat)</List>
-          <List>Longueur de l'axe : 10 mm</List>
+          <List>Diamètre de l’axe : 3 mm (avec méplat)</List>
+          <List>Longueur de l’axe : 10 mm</List>
           <List>Poids : 25 g</List>
         </ul>
 
@@ -81,7 +81,7 @@ export default function ScorpixTransmissionTab() {
 
       <Text spacing="sm">
         Nous allons modéliser nos propres engrenages pour notre hexapode. Pour
-        cela, nous devrons déterminer différentes caractéristiques à l'aide de
+        cela, nous devrons déterminer différentes caractéristiques à l’aide de
         formules pour nous permettre de réaliser une modélisation de ses
         engrenages.
       </Text>
@@ -151,11 +151,11 @@ export default function ScorpixTransmissionTab() {
 
         <List>
           Calculer le nombre de dents que devra posséder chaque engrenage afin
-          d'obtenir la vitesse de rotation voulue ;
+          d’obtenir la vitesse de rotation voulue ;
         </List>
 
         <List>
-          Réaliser le dessin de la forme général de nos engrenages afin qu'ils
+          Réaliser le dessin de la forme général de nos engrenages afin qu’ils
           puissent former ensemble une chaîne de transmission ;
         </List>
 
@@ -183,7 +183,7 @@ export default function ScorpixTransmissionTab() {
       <Text spacing="md">
         Nous avons étudié les chaînes de transmission afin de connaître les
         formules qui lient les engrenages entre eux. Notre objectif est
-        d'établir notre chaîne de transmission qui répondra à notre besoin.
+        d’établir notre chaîne de transmission qui répondra à notre besoin.
       </Text>
 
       <Media
@@ -192,7 +192,7 @@ export default function ScorpixTransmissionTab() {
           {
             type: "image",
             src: scorpixTransmi.schema2,
-            alt: "Exemple d'une chaîne de transmission",
+            alt: "Exemple d’une chaîne de transmission",
           },
         ]}
       />
@@ -406,28 +406,28 @@ export default function ScorpixTransmissionTab() {
 
       <Text spacing="md">
         <br />
-        Notre objectif est d'effectuer le chemin inverse (sorties → central →
-        moteur) et de déterminer le nombre de dents de l'engrenage moteur afin
-        d'obtenir sa vitesse de rotation fixée. Puis nous vérifierons cette
+        Notre objectif est d’effectuer le chemin inverse (sorties → central →
+        moteur) et de déterminer le nombre de dents de l’engrenage moteur afin
+        d’obtenir sa vitesse de rotation fixée. Puis nous vérifierons cette
         configuration en faisant le calcul dans le bon sens (moteur → central →
         sorties).
       </Text>
 
       <Text spacing="md">
         Déterminons le nombre de dents <MathJax inline>{`\\( D_1 \\)`}</MathJax>{" "}
-        de l'engrenage moteur :
+        de l’engrenage moteur :
       </Text>
 
       <ul className="ml-6 list-disc">
         <List>
-          Pour l'engrenage de sortie (E3) :{" "}
+          Pour l’engrenage de sortie (E3) :{" "}
           <MathJax inline>
             {`\\( D_3 = 25,\\ T_3 = 200\\ \\text{tr/min} \\)`}
           </MathJax>
         </List>
 
         <List>
-          Pour l'engrenage central (E2) :
+          Pour l’engrenage central (E2) :
           <span className="block w-full text-center">
             <MathJax inline>
               {`
@@ -446,7 +446,7 @@ export default function ScorpixTransmissionTab() {
         </List>
 
         <List>
-          Pour l'engrenage moteur (E1) :
+          Pour l’engrenage moteur (E1) :
           <span className="block w-full text-center">
             <MathJax inline>
               {`
@@ -466,7 +466,7 @@ export default function ScorpixTransmissionTab() {
         <List>
           On sait que{" "}
           <MathJax inline>{`\\( T_1 = 570\\ \\text{tr/min} \\)`}</MathJax>,
-          ainsi on obtient l'équation suivante :{" "}
+          ainsi on obtient l’équation suivante :{" "}
           <MathJax inline>
             {`\\( 570 = 83.333 \\times \\frac{60}{D_1} \\)`}
           </MathJax>
@@ -480,7 +480,7 @@ export default function ScorpixTransmissionTab() {
         </List>
 
         <List>
-          On arrondit le nombre de dents, ainsi l'engrenage devra posséder{" "}
+          On arrondit le nombre de dents, ainsi l’engrenage devra posséder{" "}
           <MathJax inline>{`\\( D_1 = 9\\ \\text{dents} \\)`}</MathJax>
         </List>
       </ul>
@@ -565,7 +565,7 @@ export default function ScorpixTransmissionTab() {
 
       <Text spacing="lg">
         Lorsque nous avons mis en route le moteur, la chaîne de transmission a
-        été fonctionnelle. A partir, d'un seul mouvement circulaire délivré par
+        été fonctionnelle. A partir, d’un seul mouvement circulaire délivré par
         le moteur, nous avons pu réduire la vitesse de rotation et le distribuer
         sur 6 engrenages disposés en cercle.
       </Text>
@@ -576,7 +576,7 @@ export default function ScorpixTransmissionTab() {
 
       <Text spacing="md">
         Lors des réalisé avec le prototype 1 de notre hexapode, nous avons pu
-        constater que le déplacement obtenu n'est pas celui souhaité. Nous
+        constater que le déplacement obtenu n’est pas celui souhaité. Nous
         devons donc réaliser une nouvelle chaîne de transmission qui puisse
         répondre à notre besoin.
       </Text>
@@ -598,16 +598,16 @@ export default function ScorpixTransmissionTab() {
       />
 
       <Text spacing="md">
-        Nous pouvons bien observer que les 6 engrenages "patte" ont le même sens
+        Nous pouvons bien observer que les 6 engrenages “patte” ont le même sens
         de rotation. Nous avons représenté par une flèche bleue le sens de
         déplacement effectué par chaque patte qui résulte de la rotation de son
-        engrenage. Ainsi, on comprend mieux pourquoi l'hexapode effectue des
+        engrenage. Ainsi, on comprend mieux pourquoi l’hexapode effectue des
         tours sur lui-même.
       </Text>
 
       <Text spacing="md">
-        Notre objectif et donc d'inverser le sens de rotation de 3 engrenages
-        d'un même coté. Pour cela, nous avons énuméré plusieurs solutions qui
+        Notre objectif et donc d’inverser le sens de rotation de 3 engrenages
+        d’un même coté. Pour cela, nous avons énuméré plusieurs solutions qui
         ont des avantages comme des inconvénients. Gardons en tête, que nous
         souhaitons une solution simple et un hexapode esthétiquement
         équilibré/symétrique.
@@ -626,28 +626,28 @@ export default function ScorpixTransmissionTab() {
 
       <Text spacing="md">
         Après avoir débattu en équipe, nous avons choisi le Solution 1 pour
-        plusieurs raisons. Dans un premier temps, l'équilibre et la symétrie de
-        cette chaîne de transmission apportera du charme à l'aspect visuel de
+        plusieurs raisons. Dans un premier temps, l’équilibre et la symétrie de
+        cette chaîne de transmission apportera du charme à l’aspect visuel de
         notre hexapode. De plus, la structure générale ne subira pas de
-        complexification supplémentaire, car la hauteur du système est d'une
+        complexification supplémentaire, car la hauteur du système est d’une
         unité (3 mm).
       </Text>
 
       <Text spacing="md">
-        Concernant l'augmentation de la largeur globale de l'hexapode, nous nous
+        Concernant l’augmentation de la largeur globale de l’hexapode, nous nous
         sommes projetés sur les éléments supplémentaires que nous allons
-        ajouter. En effet, nous avons besoin d'espace entre les deux pattes
+        ajouter. En effet, nous avons besoin d’espace entre les deux pattes
         avant afin de pouvoir positionner une mandibule. De plus, cette
         augmentation de la largeur générera un espace plus grand entre les
         mécaniques de patte ce qui nous permettra de positionner la batterie en
         dessous comme prévu initialement. Par la même occasion, cela aura pour
-        avantage de baisser le centre de gravité de l'hexapode.
+        avantage de baisser le centre de gravité de l’hexapode.
       </Text>
 
       <Text spacing="lg">
         Nous allons désormais réaliser le prototype 2 de la transmission avec
         cette nouvelle solution afin de la tester pour pouvoir ensuite
-        l'injecter dans l'hexapode.
+        l’injecter dans l’hexapode.
       </Text>
 
       <Title size={"3"}>Prototype 2</Title>
@@ -656,7 +656,7 @@ export default function ScorpixTransmissionTab() {
         Voici le prototype 2 de notre chaîne de transmission. Grâce à elle, nous
         allons pouvoir distribuer les bons moments aux 6 mécaniques de pattes.
         En effet, sur le prototype 1, les 6 mécaniques tournaient dans le même
-        sens. Nous devions changer le sens de rotation de 3 mécaniques d'un même
+        sens. Nous devions changer le sens de rotation de 3 mécaniques d’un même
         coté. Pour cela, nous avons opté pour la solution 1.
       </Text>
 
@@ -673,13 +673,13 @@ export default function ScorpixTransmissionTab() {
 
       <Text spacing="md">
         Cette modélisation nous montre que cette nouvelle transmission va avoir
-        un impact significatif sur la taille de l'hexapode, mais nous saurons
+        un impact significatif sur la taille de l’hexapode, mais nous saurons
         tirer avantage de cet effet secondaire.
       </Text>
 
       <Text spacing="md">
         Par exemple, nous avons ajouté une pièce sur le support de la
-        transmission afin de vérifier si l'on pourra placer le moteur sous
+        transmission afin de vérifier si l’on pourra placer le moteur sous
         celui-ci. Le moteur doit trouver sa place entre les 2 nouveaux axes
         positionnés et les 2 axes des grands engrenages.
       </Text>
@@ -703,14 +703,14 @@ export default function ScorpixTransmissionTab() {
       />
 
       <Text spacing="md">
-        Cette nouvelle a correctement fonctionné lorsque nous l'avons branché et
-        délivre bien la bonne rotation aux engrenages d'extrémités. De plus, le
+        Cette nouvelle a correctement fonctionné lorsque nous l’avons branché et
+        délivre bien la bonne rotation aux engrenages d’extrémités. De plus, le
         moteur se glisse bien entre les 4 axes.
       </Text>
 
       <Text spacing="xl">
         Nous allons choisir cette solution pour réaliser notre prototype 2
-        d'hexapode général.
+        d’hexapode général.
       </Text>
 
       <NextTab to="/projects/scorpix/paw" label="Patte" />

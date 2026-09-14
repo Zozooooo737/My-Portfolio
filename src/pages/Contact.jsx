@@ -1,8 +1,7 @@
-import { FiMail, FiPhone, FiGithub, FiLinkedin } from "react-icons/fi";
+import PropTypes from "prop-types";
+import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaUniversity } from "react-icons/fa";
-import { useState } from "react";
 
-// Composant Carte de Contact Principale
 const ContactCard = ({ icon, title, value, link }) => (
   <a
     href={link}
@@ -24,15 +23,15 @@ const ContactCard = ({ icon, title, value, link }) => (
   </a>
 );
 
-const Contact = () => {
-  const [message, setMessage] = useState("");
+ContactCard.propTypes = {
+  icon: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
 
-  const handleSendMessage = () => {
-    const mailtoLink = `mailto:enzo.bottura137@gmail.com?subject=Message%20depuis%20le%20site&body=${encodeURIComponent(
-      message,
-    )}`;
-    window.location.href = mailtoLink;
-  };
+const Contact = () => {
+
 
   return (
     <div className="text-text w-full px-4 py-10 sm:px-8 md:px-10 lg:px-20 xl:px-50 xl:pt-15 xl:pb-20">
@@ -92,7 +91,7 @@ const Contact = () => {
 
         {/* Conclusion */}
         <p className="mx-auto mt-12 max-w-xl text-center text-xl font-semibold text-gray-200">
-          N'hésitez pas à me contacter pour discuter de vos projets ou
+          N’hésitez pas à me contacter pour discuter de vos projets ou
           simplement échanger. Je suis à votre écoute !
         </p>
       </div>

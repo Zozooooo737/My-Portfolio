@@ -1,5 +1,4 @@
 import { photos } from "@/assets/Assets";
-import React from "react";
 
 const ProfileHeader = () => {
   return (
@@ -49,7 +48,9 @@ const ProfileHeader = () => {
               🧠 Personnalité
             </p>
             <p className="text-base md:text-lg">
-              Curieux, sociable et passionné par la création et l'innovation. Toujours en quête d'apprentissage, je prends plaisir à résoudre des défis techniques et à mener des projets de A à Z.
+              Curieux, sociable et passionné par la création et l’innovation. Toujours en
+              quête d’apprentissage, je prends plaisir à résoudre des défis techniques et à
+              mener des projets de A à Z.
             </p>
           </div>
         </div>
@@ -84,7 +85,7 @@ const ProfileHeader = () => {
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
-                <span>Capacité d'apprentissage rapide</span>
+                <span>Capacité d’apprentissage rapide</span>
               </li>
             </ul>
           </div>
@@ -118,7 +119,7 @@ const ProfileHeader = () => {
 
         {/* Phrase accrocheuse */}
         <p className="animate-typing col-span-2 pt-8 text-center text-xl text-gray-300">
-          🔧 De l'idée à la réalisation : j'explore, j'innove et je concrétise
+          🔧 De l’idée à la réalisation : j’explore, j’innove et je concrétise
           des projets qui me passionnent.
         </p>
       </div>
@@ -176,8 +177,8 @@ const ProfileHeader = () => {
         <div className="mt-4">
           <p className="text-accent text-sm font-semibold">🧠 Personnalité</p>
           <p className="pl-2 text-xs leading-tight text-gray-300">
-            Curieux, sociable et passionné par la création et l'innovation.
-            J'aime résoudre des défis techniques et mener des projets de A à Z.
+            Curieux, sociable et passionné par la création et l’innovation.
+            J’aime résoudre des défis techniques et mener des projets de A à Z.
           </p>
         </div>
 
@@ -189,7 +190,7 @@ const ProfileHeader = () => {
               <li>• Esprit analytique & résolution de problèmes</li>
               <li>• Travail en équipe & communication</li>
               <li>• Gestion de projet & organisation</li>
-              <li>• Capacité d'apprentissage rapide</li>
+              <li>• Capacité d’apprentissage rapide</li>
             </ul>
           </div>
           <div>
@@ -205,7 +206,7 @@ const ProfileHeader = () => {
 
         {/* Phrase d'accroche */}
         <p className="mt-4 text-center text-xs text-gray-300">
-          🔧 De l'idée à la réalisation : passion pour l'innovation.
+          🔧 De l’idée à la réalisation : passion pour l’innovation.
         </p>
       </div>
     </>

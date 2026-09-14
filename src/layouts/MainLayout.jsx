@@ -10,7 +10,7 @@ export default function MainLayout() {
       <NavBar />
 
       {/* Contenu dynamique */}
-      <div className="bg-pattern flex flex-1 flex-col pt-[96px]">
+      <div className="bg-pattern flex flex-1 flex-col pt-24">
         <Container className="flex flex-1 flex-col">
           <Outlet />
         </Container>

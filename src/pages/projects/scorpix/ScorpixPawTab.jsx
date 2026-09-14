@@ -11,7 +11,7 @@ export default function ScorpixPawTab() {
       <Text>
         La patte constitue l’élément de notre hexapode en contact direct avec le
         sol. Elle a pour rôle de transmettre le mouvement généré par la
-        mécanique, permettant ainsi de déplacer l'hexapode. Sa conception doit
+        mécanique, permettant ainsi de déplacer l’hexapode. Sa conception doit
         garantir à la fois flexibilité et solidité pour supporter le poids de
         l’hexapode, tout en assurant une démarche stable et efficace sur
         différents types de surfaces.
@@ -19,14 +19,14 @@ export default function ScorpixPawTab() {
 
       <Title size="2">
         Objectif : Réaliser une patte qui doit pouvoir supporter le poids de
-        l'hexapode et permettre le déplacement de ce dernier.
+        l’hexapode et permettre le déplacement de ce dernier.
       </Title>
 
       <Title size="3">Prototype 1</Title>
 
       <Text spacing="md">
         Une patte a déjà été réalisée dans la partie Mécanique de Patte afin de
-        se rendre compte de son effet. La patte est simple et n'est pas
+        se rendre compte de son effet. La patte est simple et n’est pas
         techniquement complexe.
       </Text>
 
@@ -42,16 +42,16 @@ export default function ScorpixPawTab() {
       />
 
       <Text spacing="lg">
-        Cette patte n'est pas très complexe, mais est suffisante pour la
+        Cette patte n’est pas très complexe, mais est suffisante pour la
         réalisation de notre hexapode 1.
       </Text>
 
       <Title size="3">Prototype 2</Title>
 
       <Text spacing="lg">
-        Lors de l'imagination du prototype 2 de notre hexapode, nous avons pensé
+        Lors de l’imagination du prototype 2 de notre hexapode, nous avons pensé
         à ajouter une pièce à chaque patte. Cette pièce apporte une amélioration
-        : permettre à l'hexapode d'être plus haut sur patte et d'améliorer son
+        : permettre à l’hexapode d’être plus haut sur patte et d’améliorer son
         adhérence sur un certain type de sole.
       </Text>
 
@@ -104,8 +104,8 @@ export default function ScorpixPawTab() {
 
       <Text spacing="md">
         <br />
-        Un côté est simple et arrondi et l'autre est plus long et crochus. Le
-        coté crochus pourra permettre d'avoir plus d'adhérence sur certaines
+        Un côté est simple et arrondi et l’autre est plus long et crochus. Le
+        coté crochus pourra permettre d’avoir plus d’adhérence sur certaines
         surfaces comme la moquette.
       </Text>
 
@@ -116,7 +116,7 @@ export default function ScorpixPawTab() {
       </Text>
 
       <Text spacing="xl">
-        Cette nouvelle patte sera utilisée pour le prototype 2 de l'hexapode.
+        Cette nouvelle patte sera utilisée pour le prototype 2 de l’hexapode.
       </Text>
 
       <NextTab to="/projects/scorpix/structure" label="Structure" />

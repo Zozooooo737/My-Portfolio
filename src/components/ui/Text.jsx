@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export default function Text({ children, spacing = "none" }) {
   const spacingClasses = {
@@ -17,3 +17,8 @@ export default function Text({ children, spacing = "none" }) {
     </p>
   );
 }
+
+Text.propTypes = {
+  children: PropTypes.node.isRequired,
+  spacing: PropTypes.oneOf(["none", "sm", "md", "lg", "xl"]),
+};

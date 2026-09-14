@@ -1,9 +1,11 @@
+import NavButton from "@/components/ui/NavButton";
+import Logo from "@/assets/icons/enzo-bottura/enzo-bottura-logo.svg";
+
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
-import NavButton from "@/components/ui/NavButton";
-import Logo from "@/assets/icons/enzo-bottura/enzo-bottura-logo.svg";
 
 export default function NavBar() {
   const [isVisible, setIsVisible] = useState(true);
@@ -155,3 +157,9 @@ function MobileNavButton({ to, children, onClick }) {
     </NavButton>
   );
 }
+
+MobileNavButton.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+};

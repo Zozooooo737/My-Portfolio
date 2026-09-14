@@ -1,4 +1,6 @@
 import Tag from "@/components/projects/Tag";
+
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export default function Card({
@@ -68,3 +70,19 @@ export default function Card({
     </div>
   );
 }
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string,
+  description: PropTypes.string.isRequired,
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string.isRequired,
+      logo: PropTypes.string,
+      color: PropTypes.string,
+    })
+  ),
+};

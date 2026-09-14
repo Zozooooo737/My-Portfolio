@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const Quote = ({ title, children }) => {
   return (
@@ -9,10 +9,15 @@ const Quote = ({ title, children }) => {
         </h3>
       )}
       <blockquote className="text-sm text-gray-200 italic md:text-xl">
-        "{children}"
+        “{children}”
       </blockquote>
     </div>
   );
+};
+
+Quote.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
 
 export default Quote;
