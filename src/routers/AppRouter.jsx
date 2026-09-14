@@ -14,6 +14,7 @@ import StructureTab from "@/pages/projects/scorpix/ScorpixStructureTab";
 import Cloclo from "@/pages/projects/cloclo/Cloclo";
 import BoogleZoa from "@/pages/projects/boogleZoa/BoogleZoa";
 import TickUp from "@/pages/projects/tickUp/TickUp";
+import VertiPark from "@/pages/projects/vertiPark/VertiPark";
 
 export default function AppRouter() {
   return (
@@ -33,6 +34,7 @@ export default function AppRouter() {
         <Route path="projects/cloclo" element={<Cloclo />} />
         <Route path="projects/boogle-zoa" element={<BoogleZoa />} />
         <Route path="projects/tick-up" element={<TickUp />} />
+        <Route path="projects/verti-park" element={<VertiPark />} />
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>

@@ -2,6 +2,7 @@ import { scorpixImages } from "@/assets/ScorpixAssets";
 import { clocloImages } from "@/assets/ClocloAssets";
 import { boogleZoaImages } from "@/assets/BoogleZoaAssets";
 import { tickUpImages } from "@/assets/TickUpAssets";
+import { vertiParkImages } from "@/assets/VertiParkAssets";
 
 const projectsData = [
   {
@@ -107,6 +108,44 @@ const projectsData = [
         "Doctrine ORM",
         "Twig",
         "MySQL",
+        "Bootstrap",
+        "GitHub",
+      ],
+    },
+  },
+  {
+    id: "project-verti-park",
+    title: "Verti Park",
+    skills: [
+      "skill-mechanics",
+      "skill-arduino",
+      "skill-electronics",
+      "skill-php",
+      "skill-pcb",
+      "skill-machining",
+      "skill-3d-modeling",
+      "skill-symfony",
+      "skill-mysql",
+      "skill-teamwork",
+    ],
+    thumbnail: vertiParkImages.minia,
+    description:
+      "Parking intelligent automatisé à structure verticale et rotative avec interface web de gestion.",
+    year: 2026,
+    link: "verti-park",
+    repository: "https://github.com/Zozooooo737/VertiPark",
+    imageAlt: "Parking intelligent automatisé à structure verticale et rotative.",
+    details: {
+      context:
+        "Projet bachelor de conception et réalisation d’un prototype de parking intelligent automatisé basé également sur un site web de gestion des places.",
+      role: "Concepteur mécanique, électronique et développeur web : modélisation 3D, conception du schéma électronique et PCB sur KiCad, programmation d’un ESP32 pour piloter les actionneurs et capteurs, développement de l’interface web en PHP.",
+      technologies: [
+        "SolidWorks",
+        "KiCad",
+        "ESP32",
+        "PHP",
+        "MySQL",
+        "Symfony",
         "Bootstrap",
         "GitHub",
       ],

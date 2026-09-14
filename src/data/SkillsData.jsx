@@ -12,6 +12,7 @@ import Logo3DModeling from "@/assets/icons/skills/3d-modeling-logo.png";
 import LogoMechanics from "@/assets/icons/skills/mechanics-logo.png";
 import LogoMachining from "@/assets/icons/skills/machining-logo.png";
 import LogoElectronics from "@/assets/icons/skills/electronics-logo.png";
+import LogoPCB from "@/assets/icons/skills/pcb-logo.png";
 import LogoArduino from "@/assets/icons/skills/arduino-logo.png";
 import LogoCsharp from "@/assets/icons/skills/csharp-logo.png";
 import LogoGithub from "@/assets/icons/skills/github-logo.png";
@@ -224,6 +225,15 @@ export const skillsData = [
           "Conception de circuits électroniques et systèmes embarqués.",
         projects: ["project-cloclo"],
       },
+      {
+        id: "skill-pcb",
+        name: "PCB Design",
+        level: 60,
+        logo: LogoPCB,
+        color: "#C6F3FF",
+        description: "Conception de cartes électroniques (PCB).",
+        projects: ["project-verti-park"],
+      }
     ],
   },
   {

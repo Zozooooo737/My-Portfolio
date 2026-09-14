@@ -101,6 +101,22 @@ const timelineData = [
       "Application web de réservation de séances de cinéma développée avec Symfony en architecture MVC, incluant la conception de la base de données, la logique métier, les contrôleurs et les interfaces utilisateur.",
     link: "/projects/tick-up",
   },
+  {
+    id: 14,
+    title: "Projet : Verti’Park",
+    date: "2026 - Février",
+    description:
+      "Conception et réalisation d’un prototype de parking intelligent automatisé à structure verticale et rotative. Le projet mêle mécanique, électronique et informatique, avec la modélisation 3D complète des différents sous-systèmes et de l’assemblage final, la conception du schéma électronique et d’une PCB personnalisée sur KiCad, ainsi que la programmation d’un ESP32 pour piloter les différents actionneurs et capteurs. Une interface web en PHP permet également de communiquer avec le système et de gérer les places du parking.",
+    link: "/projects/verti-park"
+  },
+  {
+    id: 15,
+    title: "Stage Ingénieur – Celeste Ecoflyers",
+    date: "2026 - Juin",
+    description:
+      "Stage d’ingénieur chez Celeste Ecoflyers, startup développant le dAS10, un drone autonome à aile pneumatique. Je travaille sur la conception d’un système de régulation automatique de la pression interne de l’aile afin de maintenir ses performances et son intégrité structurelle quelles que soient les conditions de vol. Ce projet mobilise des compétences en aéronautique, instrumentation, capteurs, thermodynamique, modélisation physique et automatique."
+    
+  }
 ];
 
 export default timelineData;
