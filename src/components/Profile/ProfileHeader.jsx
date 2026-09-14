@@ -49,9 +49,7 @@ const ProfileHeader = () => {
               🧠 Personnalité
             </p>
             <p className="text-base md:text-lg">
-              Curieux, sociable et passionné par la création et l'innovation.
-              Toujours en quête d'apprentissage, je prends plaisir à résoudre
-              des défis techniques et à mener des projets de A à Z.
+              Curieux, sociable et passionné par la création et l'innovation. Toujours en quête d'apprentissage, je prends plaisir à résoudre des défis techniques et à mener des projets de A à Z.
             </p>
           </div>
         </div>
